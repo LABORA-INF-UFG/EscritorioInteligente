@@ -3,7 +3,7 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import time
 import os
 import _thread
-from Scheduler.connection import Connection
+from MQTT.connection import Connection
 from Scheduler.scheduling_simulator import SchedulingSimulator
 
 try:
@@ -32,7 +32,7 @@ class Scheduler():
         #print(time.date())
         #print(time.time())
         print("publishing %r" % time)
-        msg = {'horario': str(time.time())}
+        msg = {'horario': str(time.time()), 'ativo': 'True'}
         self.__connection.publish('/admin/f47551/attrs', msg)
         
     def trigger_event(self):
