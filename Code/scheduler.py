@@ -3,6 +3,7 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import time
 import os
 import _thread
+from connection import Connection
 from scheduling_simulator import SchedulingSimulator
 
 try:
@@ -13,8 +14,9 @@ except ImportError:
 class Scheduler():
     def __init__(self):
         self.__msg = None
+        self.__connection = Connection()
         self.start_scheduler()
-
+    
     def get_scheduling(self):
         sch = SchedulingSimulator()
         results = sch.get_times()
@@ -27,9 +29,11 @@ class Scheduler():
         return 0
 
     def configure(self, time):
-        print(time.date())
-        print(time.time())
-        print("active %r" % time)
+        #print(time.date())
+        #print(time.time())
+        print("publishing %r" % time)
+        msg = time.time()
+        self.__connection.publish("teste", msg)
         
     def trigger_event(self):
         results = self.get_scheduling()
