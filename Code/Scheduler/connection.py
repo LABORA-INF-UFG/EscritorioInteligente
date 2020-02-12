@@ -1,4 +1,5 @@
 import paho.mqtt.client as mqtt
+import json
 
 class Connection:
 
@@ -8,4 +9,5 @@ class Connection:
         self.__client.loop_start()
 
     def publish(self, topic, msg):
-        self.__client.publish(topic, str(msg))
+        print(msg)
+        self.__client.publish(topic, json.dumps(msg))
