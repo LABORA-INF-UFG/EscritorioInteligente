@@ -15,7 +15,7 @@ class Scheduler():
     def __init__(self):
         self.__msg = None
         self.__connection = Connection()
-        self.start_scheduler()
+        self.scheduler()
     
     def get_scheduling(self):
         sch = SchedulingSimulator()
@@ -32,23 +32,24 @@ class Scheduler():
         #print(time.date())
         #print(time.time())
         print("publishing %r" % time)
-        msg = {'horario': str(time.time()), 'ativo': 'True'}
-        self.__connection.publish('/admin/f47551/attrs', msg)
+        msg = {'horario': str(time.time()), 'ativo': True}
+        self.__connection.publish('/admin/a124c1/attrs', msg)
         
     def trigger_event(self):
         results = self.get_scheduling()
         if results != 0:
             try:
-                _thread.start_new_thread(self.configure, (results, ))
+                self.configure(results)
             except:
-                print ("Error: unable to start thread")
+                pass
 
         else:
             print("Unreserved room")
 
-    def start_scheduler(self):
+    
+    def scheduler(self):
         scheduler = AsyncIOScheduler()
-        scheduler.add_job(self.trigger_event, 'interval', seconds=59, id='temporal_event')
+        scheduler.add_job(self.trigger_event, 'interval', seconds=2, id='temporal_event')
         
         scheduler.start()
         print('Press Ctrl+{0} to exit'.format('Break' if os.name == 'nt' else 'C'))
