@@ -25,13 +25,13 @@ GPIO.setup(GPIO_TRIGGER, GPIO.OUT)
 GPIO.setup(GPIO_ECHO, GPIO.IN) '''
 
 def on_message(client, userdata, message):
-#    print("ok")
     decoded_message = str(message.payload)
     time_i = datetime.strptime(decoded_message[4:30], '%Y-%m-%d %H:%M:%S.%f')
     time_f = datetime.strptime(decoded_message[33:59], '%Y-%m-%d %H:%M:%S.%f')
-    print(time_i)
-    print(time_f)
-    monitoring(time_i, time_f)
+    response = monitoring(time_i, time_f)
+    if(response == 1):
+        msg = 's|Oii'
+        client.publish(topic_to_publish, str(msg))
 
 #MQTT client setup and connection
 client = mqtt.Client()
@@ -75,20 +75,22 @@ def distance():
     return 50
 
 def monitoring(time_start, time_stop):
+    return 1
     now = datetime.now()
     while now <= time_stop:
         dist = distance()
         if dist > 40:
             start = datetime.now()
             while True:
-                #print(datetime.now() - start)
-                if datetime.now() - start >= start + timedelta(60):
-                    print("vazio")
-                    break
+                #print(start + timedelta(seconds=60))
+                if datetime.now() >= start + timedelta(seconds=60):
+                    msg = 's|Vazio'
+                    print(msg)
+                    return 1
                 elif distance() < 40:
                     break
         now = datetime.now()   
-
+    return 0
 
 if __name__ == '__main__':
     try:
