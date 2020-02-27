@@ -8,8 +8,8 @@ class Email():
         self.__smtp_ssl_host = 'smtp.gmail.com'
         self.__smtp_ssl_port = 465
         self.__server = smtplib.SMTP_SSL(self.__smtp_ssl_host, self.__smtp_ssl_port)
-        self.__username = 'franciellysouza020@gmail.com'
-        self.__password =  'f91348509.'
+        self.__username = 'escritoriointeligente123@gmail.com'
+        self.__password =  'fran123.'
 
     def send_email(self, mail_from, mail_to, mail_subject, mail_message):
         self.__server.login(self.__username, self.__password)
@@ -18,5 +18,4 @@ class Email():
 
 if __name__ == "__main__":
     mail = Email()
-    print("oi")
-    mail.send_email('franciellysouza020@gmail.com', 'franciellysouza552@gmail.com', 'teste ', 'oi')
+    mail.send_email('escritoriointeligente123@gmail.com', 'franciellysouza552@gmail.com', 'teste ', 'oi')
