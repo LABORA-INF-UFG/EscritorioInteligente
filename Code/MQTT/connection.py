@@ -11,7 +11,7 @@ class Connection:
     
     def publish(self, topic, msg):
         print(msg)
-        self.__client.publish(topic, json.dumps(msg))
+        self.__client.publish(topic, msg)
 
     def subscribe(self, topic):
         self.__client.subscribe(topic)

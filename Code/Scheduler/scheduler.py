@@ -23,17 +23,21 @@ class Scheduler():
         now = datetime.now()
         after = now + timedelta(seconds=60)
         for row in results:
-            row_date = datetime.strptime(row, '%Y-%m-%d %H:%M:%S.%f')
-            if row_date >= now and row_date <= after:
-                return row_date
+            row_date_i = datetime.strptime(row['i'], '%Y-%m-%d %H:%M:%S.%f')
+            row_date_f = datetime.strptime(row['f'], '%Y-%m-%d %H:%M:%S.%f')
+            if row_date_i >= now and row_date_i <= after:
+                return [row_date_i, row_date_f]
         return 0
 
     def configure(self, time):
         #print(time.date())
         #print(time.time())
-        print("publishing %r" % time)
-        msg = {'horario': str(time.time()), 'ativo': True}
-        self.__connection.publish('/admin/a124c1/attrs', msg)
+        time_i = time[0]
+        time_f = time[1]
+        topic = '/4jggokgpepnvsb2uv4s40d59ov/relogio001/attrs'
+        print("publishing %r" % time_i)
+        msg = 'i|'+ str(time_i)+'|f|'+str(time_f)+'|s|Ativo'
+        self.__connection.publish(topic, msg)
         
     def trigger_event(self):
         results = self.get_scheduling()
