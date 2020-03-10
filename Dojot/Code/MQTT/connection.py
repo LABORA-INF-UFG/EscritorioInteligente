@@ -1,5 +1,6 @@
 import paho.mqtt.client as mqtt
 import paho.mqtt.subscribe as subscribe
+from Email.email import Email
 import json
 import time
 
@@ -11,5 +12,13 @@ class Connection():
         self.__client.loop_start()
     
     def publish(self, topic, msg):
-        print(msg)
+        print(json.dumps(msg))
         self.__client.publish(topic, json.dumps(msg))
+  
+    def on_message_email(self, client, userdata, message):
+        print("Send Email")
+        self.__mail.send_email('escritoriointeligente123@gmail.com', 'franciellysouza552@gmail.com', 'teste ', 'oi')
+    
+    def subscribe(self, topic):
+
+        subscribe.callback(self.on_message_email, topic)

@@ -33,9 +33,9 @@ class Scheduler():
         #print(time.time())
         time_i = time[0]
         time_f = time[1]
-        topic = '/admin/1e8fe2/attrs'
-        print("publishing %r" % str(time_i))
-        msg = {'inicio_reserva': str(time_i),'fim_reserva': str(time_f),'estado': True}
+        topic = '/admin/20c259/attrs'
+        print("publishing")
+        msg = {'inicio_reserva': str(time_i),'fim_reserva': str(time_f)}
         self.__connection.publish(topic, msg)
         
     def trigger_event(self):
