@@ -4,13 +4,14 @@ import RPi.GPIO as GPIO
 import time
 import json
 import paho.mqtt.client as mqtt
+import paho.mqtt.subscribe as subscribe
 
 #properties definition
 
 #internal definitions setup
 client_id = "admin"
-topic_to_publish = "/admin/7be1ec/attrs"
-topic_to_subscribe = "/admin/753ea6/config"
+topic_to_publish = "/admin/20270c/attrs"
+topic_to_subscribe = "/admin/20c259/config"
 
 #GPIO Mode (BOARD / BCM)
 GPIO.setmode(GPIO.BCM)
@@ -24,23 +25,27 @@ GPIO.setup(GPIO_TRIGGER, GPIO.OUT)
 GPIO.setup(GPIO_ECHO, GPIO.IN)
 
 def on_message(client, userdata, message):
-    decoded_message = str(message.payload)
-    time_i = datetime.strptime(decoded_message[4:30], '%Y-%m-%d %H:%M:%S.%f')
-    time_f = datetime.strptime(decoded_message[33:59], '%Y-%m-%d %H:%M:%S.%f')
-    response = monitoring(time_i, time_f)
+    decoded_message = json.loads(message.payload.decode())
+    print(decoded_message)
+    msg = {'estado': 'vazio'}
+    print(msg)
+    client.publish(topic_to_publish, json.dumps(msg))
+    #time_i = datetime.strptime(decoded_message[4:30], '%Y-%m-%d %H:%M:%S.%f')
+'''    time_f = datetime.strptime(decoded_message["fim"], '%Y-%m-%d %H:%M:%S.%f')
+    response = monitoring(time_f)
     if(response == 1):
         msg = {'estado': 'Vazio'}
         print(msg)
-        client.publish(topic_to_publish, msg)
+        client.publish(topic_to_publish, json.dumps(msg))'''
 
 #MQTT client setup and connection
 client = mqtt.Client()
 
 print("Connecting to mqtt broker...")
-client.connect(host='192.168.0.107', port=1883)
+client.connect(host='10.16.1.171', port=1883)
 client.loop_start()
 
-print("Subscribing to topic /admin/753ea6/config ...")
+print("Subscribing to topic /admin/20c259/config...")
 client.subscribe(topic_to_subscribe)
 client.on_message = on_message
 
@@ -71,7 +76,7 @@ def distance():
  
     return distance
  
-def monitoring(time_start, time_stop):
+def monitoring(time_stop):
     now = datetime.now()
     while now <= time_stop:
         dist = distance()
@@ -91,10 +96,10 @@ if __name__ == '__main__':
     try:
         while True:
            ''' dist = distance()
-            message = {"distancia": str(dist)}'''
-#            print ("distancia: %.1f" % dist)
-            #print ("Publishing", message, 'to topic', topic_to_publish)
-            #client.publish(topic_to_publish, json.dumps(message))
+            message = {"distancia": str(dist)}
+            print ("distancia: %.1f" % dist)
+            print ("Publishing", message, 'to topic', topic_to_publish)
+            client.publish(topic_to_publish, json.dumps(message))'''
            time.sleep(1)
  
         # Reset by pressing CTRL + C
