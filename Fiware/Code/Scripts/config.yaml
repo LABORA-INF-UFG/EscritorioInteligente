@@ -1,0 +1,15 @@
+Nodes:
+      - ID: 01
+      - ID: 02
+      - ID: 03
+      - ID: 04
+      - ID: 05
+
+Email:
+      Username_sender: 'escritoriointeligente123@gmail.com'
+      Password_sender: 'fran123.'
+      Username_recipient: 'franciellysouza552@gmail.com'
+
+Topics:
+      topic_scheduler: '/4jggokgpepnvsb2uv4s40d59ov/relogio001/attrs'
+      topic_raspberry: '/4jggokgpepnvsb2uv4s40d59ov/motion001/attrs'

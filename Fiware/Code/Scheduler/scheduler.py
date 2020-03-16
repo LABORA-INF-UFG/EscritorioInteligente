@@ -2,7 +2,7 @@ from datetime import datetime, date, timedelta
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from MQTT.connection import Connection
 from Scheduler.scheduling_simulator import SchedulingSimulator
-import time
+import time, yaml
 import os
 
 try:
@@ -14,6 +14,8 @@ class Scheduler():
     def __init__(self):
         self.__msg = None
         self.__connection = Connection()
+        config = yaml.load(open('./Scripts/config.yaml', 'r'))
+        self.__topic = confif['Topics']['topic_scheduler']
         self.scheduler()
     
     def get_scheduling(self):
@@ -33,10 +35,9 @@ class Scheduler():
         #print(time.time())
         time_i = time[0]
         time_f = time[1]
-        topic = '/4jggokgpepnvsb2uv4s40d59ov/relogio003/attrs'
         print("publishing %r" % time_i)
         msg = 'i|'+ str(time_i)+'|f|'+str(time_f)+'|s|Ativo'
-        self.__connection.publish(topic, msg)
+        self.__connection.publish(self.__topic, msg)
         
     def trigger_event(self):
         results = self.get_scheduling()
