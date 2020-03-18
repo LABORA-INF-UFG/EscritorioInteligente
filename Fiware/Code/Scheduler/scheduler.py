@@ -2,6 +2,7 @@ from datetime import datetime, date, timedelta
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from MQTT.connection import Connection
 from Scheduler.scheduling_simulator import SchedulingSimulator
+from requests.auth import HTTPBasicAuth
 import time, yaml
 import os
 

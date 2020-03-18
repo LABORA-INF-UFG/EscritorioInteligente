@@ -20,17 +20,12 @@ class Connection():
         self.__client.publish(topic, json.dumps(msg))
   
     def on_message_email(self, client, userdata, message):
-        raspberry_id = json.loads(message.payload.decode())["id_act"]
-        print(raspberry_id)
-        if(raspberry_id == 1):
-            self.__mail.set_rasp01(True)
-        elif(raspberry_id = 2):
-            self.__mail.set_rasp02(True)
-        elif(raspberry_id == 3):
-            self.__mail.set_rasp03(True)
-
+        raspberry_id = json.loads(message.payload.decode())['id_rasp']
+        print("Response from: node "+raspberry_id)
+        for node in self.__mail.get_nodes():
+            if(int(node['ID'])==int(raspberry_id)):
+                self.__mail.set_node(True, self.__mail.get_nodes().index(node))
         #self.__mail.send_email('escritoriointeligente123@gmail.com', 'franciellysouza552@gmail.com', 'teste ', 'oi')
     
     def subscribe(self, topic):
-
         subscribe.callback(self.on_message_email, topic)

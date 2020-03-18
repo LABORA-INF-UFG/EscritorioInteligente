@@ -28,4 +28,6 @@ class Connection():
         #self.__mail.send_email('escritoriointeligente123@gmail.com', 'franciellysouza552@gmail.com', 'teste ', 'oi')
     
     def subscribe(self, topic):
+        print("entrou")
         subscribe.callback(self.on_message_email, topic)
+        print("saiu")

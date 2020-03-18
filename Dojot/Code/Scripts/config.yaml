@@ -13,5 +13,5 @@ Email:
       Message: 'Teste'
 
 Topics:
-      topic_scheduler: '/4jggokgpepnvsb2uv4s40d59ov/relogio001/attrs'
-      topic_raspberry: '/4jggokgpepnvsb2uv4s40d59ov/motion001/attrs'
+      topic_scheduler: '/admin/249eb4/attrs'
+      topic_raspberry: '/admin/17f28c/config'
