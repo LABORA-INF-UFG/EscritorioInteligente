@@ -13,5 +13,9 @@ Email:
       Message: 'Teste'
 
 Topics:
-      topic_scheduler: '/admin/249eb4/attrs'
-      topic_raspberry: '/admin/17f28c/config'
+      Subscribe:
+         topic_scheduler: '/admin/249eb4/config'
+         topic_raspberry: '/admin/17f28c/config'
+      Publish:
+         topic_scheduler: '/admin/249eb4/attrs'
+         topic_raspberry: '/admin/17f28c/attrs'
