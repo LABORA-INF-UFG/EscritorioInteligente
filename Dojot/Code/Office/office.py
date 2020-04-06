@@ -1,8 +1,15 @@
 from Email.email import Email
+from Office import logs
 from datetime import datetime, date, timedelta
-import yaml, time
+import yaml, time, os
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
-class Office():
+try:
+    import asyncio
+except ImportError:
+    import trollius as asyncio
+
+class Office(object):
     def __init__(self, config):
         self.__msg = None
         self.__id = None
@@ -11,10 +18,11 @@ class Office():
         self.__start = None
         self.__stop = None
         self.__nodes = []
-        print(config['Nodes'])
         for x in config['Nodes']:
-            node = {'ID': x['ID'], 'Status': False, 'Last_Update': datetime.now()}
+            node = {'ID': x['ID'], 'Status': False, 'Last_Update': datetime.now(), 'Is_alive': datetime.now()}
             self.__nodes.append(node)
+        #self.scheduler()
+        
 
     def get_start(self):
         return self.__start
@@ -42,6 +50,9 @@ class Office():
         self.__nodes[index]['Status'] = status
         self.__nodes[index]['Last_Update'] = datetime.now()
 
+    def set_last_update(self, index):
+        self.__nodes[index]['Is_alive'] = datetime.now()
+
     def set_allNodes(self):
         for x in range(len(self.__nodes)):
             self.__nodes[x]['Status'] = False
@@ -63,23 +74,27 @@ class Office():
         return 1
 
     def check_availability(self):
-        while self.__stop >= datetime.now()+timedelta(seconds=60): #monitora até 15min antes do stop da reuniao
+        logs.log("INFO - Monitoramento Iniciado.")
+        while self.__stop >= datetime.now():#+timedelta(seconds=9000): #monitora até 15min antes do fim da reuniao
             if self.get_oneNode() == 1: #recebe resposta de pelo menos um sensor"
-                print("Aguardando resposta de todos os nós...")
+                logs.log("INFO - Aguardando resposta de todos os nós...")
                 time.sleep(30)# aguarda 30 segundos
-                if(self.get_allNodes() == 1): #verifica se os outros sensores enviam resposta"
-                    print("Iniciando temporizador...")
+                if self.get_allNodes() == 1: #verifica se os outros sensores enviam resposta"
+                    logs.log("INFO - Iniciando temporizador...")
                     start = datetime.now()
-                    while self.last_update() == 1: # verifica se todos os sensores ainda estão detectando ausencia
-                        if datetime.now() >= start + timedelta(seconds=60) and self.__stop >= datetime.now()+timedelta(seconds=60): # verifica se já se passaram 15 min sem presença e se falta mais de 15 min pro stop da reserva
-                            print("Office Disponível!") 
+                    while self.last_update() == 1: # enquanto todos os sensores ainda estão detectando ausencia
+                        if datetime.now() >= start + timedelta(seconds=60): # verifica se já se passaram 15 min sem presença
+                            logs.log("INFO - Sala Disponível!") 
+                            logs.log("INFO - Finalizando monitoamento...")
                             self.__email.send_email()
                             return 1
-                            #self.set_allNodes()
                         time.sleep(1)
-                    print("Algum sensor detectou presença.")
+                    logs.log("INFO - Algum sensor detectou presença.")
                 else: # se os outros sensores nao enviam          
-                    print("Algum sensor está detectando presença.")
-            self.set_allNodes()  # False
+                    logs.log("INFO - Algum sensor está detectando presença.")
+                self.set_allNodes()  # False
             time.sleep(5)
+        logs.log("INFO - Finalizando monitoramento...")
         return 0
+
+    

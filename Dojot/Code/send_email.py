@@ -1,17 +1,24 @@
 from MQTT.connection import Connection
+from Office.is_alive import Is_Alive
 import _thread
 import time, yaml
 #from multiprocessing.pool import ThreadPool
 
-def callback(self, client, userdata, message):
-    print("oi")
+try:
+    import asyncio
+except ImportError:
+    import trollius as asyncio
 
 if __name__ == "__main__":
     connection = Connection()
-    config = yaml.load(open('./Scripts/config.yaml', 'r'))
+    is_alive = Is_Alive()
+    #config = yaml.load(open('./Scripts/config.yaml', 'r'))
     #pool = ThreadPool(processes=1000)
-    print("Subscribing to topic " + config['Topics']['Subscribe']['topic_scheduler']+"...")
     _thread.start_new_thread(connection.subscribe_schedule, ())
-    print("Subscribing to topic " + config['Topics']['Subscribe']['topic_raspberry']+"...")
     _thread.start_new_thread(connection.subscribe_raspberry, ())
-    time.sleep(20000)
+    #is_alive.scheduler(connection.get_office())
+    try:
+        asyncio.get_event_loop().run_forever()
+    except (KeyboardInterrupt, SystemExit):
+        connection.loop_stop()
+        pass 

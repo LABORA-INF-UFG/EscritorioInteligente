@@ -7,7 +7,7 @@ Nodes:
 
 Email:
       Username_sender: 'escritoriointeligente123@gmail.com'
-      Password_sender: 'fran123.'
+      Password_sender: ''
       Username_recipient: 'franciellysouza552@gmail.com'
       Subject: 'Sala Disponivel'
       Message: 'Teste'
@@ -16,6 +16,8 @@ Topics:
       Subscribe:
          topic_scheduler: '/admin/249eb4/config'
          topic_raspberry: '/admin/17f28c/config'
+         topic_is_alive: '/admin/4f30e2/config'
       Publish:
          topic_scheduler: '/admin/249eb4/attrs'
          topic_raspberry: '/admin/17f28c/attrs'
+         topic_is_alive: '/admin/4f30e2/attrs'
