@@ -2,12 +2,10 @@ Nodes:
       - ID: 01
       - ID: 02
       - ID: 03
-      - ID: 04
-      - ID: 05
 
 Email:
       Username_sender: 'escritoriointeligente123@gmail.com'
-      Password_sender: ''
+      Password_sender: 'fran123.'
       Username_recipient: 'franciellysouza552@gmail.com'
       Subject: 'Sala Disponivel'
       Message: 'Teste'

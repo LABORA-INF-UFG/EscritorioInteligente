@@ -75,7 +75,7 @@ class Connection(object):
         topic = message.topic
         if topic == self.__config['Topics']['Subscribe']['topic_is_alive']:
             raspberry_id = json.loads(message.payload)['id']
-            logs.log("INFO - Resposta de: nó {}".format(raspberry_id))
+        #    logs.log("INFO - Nó {} está ativo.".format(raspberry_id))
             for node in self.__office.get_nodes():
                 if(int(node['ID'])==int(raspberry_id)):
                     self.__office.set_last_update(self.__office.get_nodes().index(node))

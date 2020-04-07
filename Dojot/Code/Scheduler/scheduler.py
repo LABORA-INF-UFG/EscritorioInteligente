@@ -66,8 +66,8 @@ class Scheduler(object):
 
     def scheduler(self):
         scheduler = AsyncIOScheduler()
-        scheduler.add_job(self.get_scheduling, 'interval', minutes=2, id='query')
-        scheduler.add_job(self.consumer, 'interval', seconds=30, id='temporal_event')
+        scheduler.add_job(self.get_scheduling, 'interval', minutes=20, id='query')
+        scheduler.add_job(self.consumer, 'interval', seconds=60, id='temporal_event')
         #print(scheduler.get_jobs())
         scheduler.start()
         

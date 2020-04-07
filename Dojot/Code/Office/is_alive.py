@@ -16,13 +16,13 @@ class Is_Alive(object):
     def is_alive(self, office):
         now = datetime.now()
         for node in office.get_nodes():
-            if node['Is_alive'] < now - timedelta(seconds=10):
+            if node['Is_alive'] < now - timedelta(minutes=10):
                 msg = 'WARNING - Nó com ID = {} não responde desde {}!'.format(node['ID'], node['Is_alive'])
                 logs.log(msg)
 
     def scheduler(self, office):
         scheduler = AsyncIOScheduler()
-        scheduler.add_job(self.is_alive, 'interval', seconds=10, id='is_alive', args=[office])
+        scheduler.add_job(self.is_alive, 'interval', minutes=5, id='is_alive', args=[office])
         #print(scheduler.get_jobs())
         scheduler.start()
         

@@ -18,7 +18,7 @@ class Ultrassonico(object):
         self.__client_id = "admin"
         self.__topic_to_publish = "/admin/17f28c/attrs"
         self.__topic_to_subscribe = "/admin/249eb4/config"
-        self.__topic_is_alive = ''
+        self.__topic_is_alive = '/admin/4f30e2/attrs'
         self.__end = False
         self.__client = mqtt.Client()
 
@@ -26,6 +26,8 @@ class Ultrassonico(object):
         self.__client.loop_start()
         self.__log_file = str(os.path.dirname(os.path.realpath(__file__)))+'/logs.log'
 
+        self.log("INFO - Subscribing to topic /admin/249eb4/config...")
+        _thread.start_new_thread(self.subscribe_schedule, ())
         #GPIO Mode (BOARD / BCM)
         '''GPIO.setmode(GPIO.BCM)
  
@@ -53,13 +55,13 @@ class Ultrassonico(object):
         return 90
  
     def monitoring(self, time_stop):
-        while datetime.now() <= time_stop - timedelta(seconds=60) and not self.__end: # enquanto ainda nao falta 15 min pra finalizar a reserva e o monitoramento ainda nao foi encerrado
+        while datetime.now() <= time_stop - timedelta(minutes=10) and not self.__end: # enquanto ainda nao falta 15 min pra finalizar a reserva e o monitoramento ainda nao foi encerrado
             self.log('INFO - Monitoramento Iniciado.')
             dist = self.distance()
             if dist > 10: # verifica se a distancia é maior que 10 (sem presença) e se o monitoramento nao foi encerrado
                 start = datetime.now() #inicia o temporizador de 30 seg
                 while self.distance() > 10 and not self.__end and datetime.now() <= time_stop - timedelta(seconds=60): # verifica se a distancia é maior que 10 (sem presença)
-                    if datetime.now() >= start + timedelta(seconds=30) and not self.__end: # verifica se já se passaram 30 seg sem presença  e se o monitoramento nao foi encerrado
+                    if datetime.now() >= start + timedelta(seconds=25) and not self.__end: # verifica se já se passaram 30 seg sem presença  e se o monitoramento nao foi encerrado
                         msg = {'id': self.__id}
                         self.log('INFO - Ausencia detectada!')
                         self.log('INFO - Publicando: {}'.format(msg))
@@ -87,7 +89,7 @@ class Ultrassonico(object):
         subscribe.callback(self.on_message_schedule, self.__topic_to_subscribe)
 
     def is_alive(self):
-        msg = {'id': self.__id}
+        msg = {'atividade': self.__id}
         self.log("INFO - Nó ativo.")
         response = self.__client.publish(self.__topic_is_alive, json.dumps(msg))
         time.sleep(1)
@@ -102,7 +104,6 @@ class Ultrassonico(object):
         try:
             asyncio.get_event_loop().run_forever()
         except (KeyboardInterrupt, SystemExit):
-            self.__connection.loop_stop()
             pass 
 
 
@@ -110,8 +111,6 @@ class Ultrassonico(object):
 if __name__ == '__main__':
     try:
         sensor = Ultrassonico()
-        sensor.log("INFO - Subscribing to topic /admin/249eb4/config...")
-        sensor.subscribe_schedule()
         
         try:
             asyncio.get_event_loop().run_forever()

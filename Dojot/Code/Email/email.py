@@ -1,6 +1,7 @@
 import smtplib, yaml
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from Office import logs
 
 class Email():
     def __init__(self):
@@ -23,4 +24,6 @@ class Email():
         self.__server.login(self.__username, self.__password)
         self.__server.sendmail(self.__username, self.__username_recipient,msg)
         self.__server.quit()
+
+        logs.log("INFO - E-mail enviado!")
     

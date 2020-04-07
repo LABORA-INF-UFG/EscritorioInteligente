@@ -75,7 +75,7 @@ class Office(object):
 
     def check_availability(self):
         logs.log("INFO - Monitoramento Iniciado.")
-        while self.__stop >= datetime.now():#+timedelta(seconds=9000): #monitora até 15min antes do fim da reuniao
+        while self.__stop >= datetime.now()+timedelta(minutes=10): #monitora até 15min antes do fim da reuniao
             if self.get_oneNode() == 1: #recebe resposta de pelo menos um sensor"
                 logs.log("INFO - Aguardando resposta de todos os nós...")
                 time.sleep(30)# aguarda 30 segundos
@@ -83,13 +83,14 @@ class Office(object):
                     logs.log("INFO - Iniciando temporizador...")
                     start = datetime.now()
                     while self.last_update() == 1: # enquanto todos os sensores ainda estão detectando ausencia
-                        if datetime.now() >= start + timedelta(seconds=60): # verifica se já se passaram 15 min sem presença
+                        if datetime.now() >= start + timedelta(minutes=10): # verifica se já se passaram 15 min sem presença
                             logs.log("INFO - Sala Disponível!") 
                             logs.log("INFO - Finalizando monitoamento...")
                             self.__email.send_email()
                             return 1
                         time.sleep(1)
-                    logs.log("INFO - Algum sensor detectou presença.")
+                    if self.__stop >= datetime.now()+timedelta(minutes=10):
+                        logs.log("INFO - Algum sensor detectou presença.")
                 else: # se os outros sensores nao enviam          
                     logs.log("INFO - Algum sensor está detectando presença.")
                 self.set_allNodes()  # False
