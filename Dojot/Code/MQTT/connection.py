@@ -73,18 +73,24 @@ class Connection(object):
 
     def callback(self, client, userdata, message):
         topic = message.topic
+        payload = json.loads(message.payload)
+        
+        time_msg = payload['time']
+        #print(payload.get('time'))
+        #print(payload['time'])
         if topic == self.__config['Topics']['Subscribe']['topic_is_alive']:
             raspberry_id = json.loads(message.payload)['id']
-        #    logs.log("INFO - Nó {} está ativo.".format(raspberry_id))
+            logs.log("INFO - Nó {} está ativo.".format(raspberry_id))
             for node in self.__office.get_nodes():
                 if(int(node['ID'])==int(raspberry_id)):
-                    self.__office.set_last_update(self.__office.get_nodes().index(node))
+                    self.__office.set_last_update(self.__office.get_nodes().index(node), time_msg)
         elif topic == self.__config['Topics']['Subscribe']['topic_raspberry']:
             raspberry_id = json.loads(message.payload)['id_rasp']
             logs.log("INFO - Resposta de: nó {}".format(raspberry_id))
             for node in self.__office.get_nodes():
                 if(int(node['ID'])==int(raspberry_id)):
-                    self.__office.set_node(True, self.__office.get_nodes().index(node))
+                    self.__office.set_node(True, self.__office.get_nodes().index(node), time_msg)
+        print(self.__office.get_nodes())
 
     def subscribe_raspberry(self):
         logs.log("INFO - Subscrevendo nos tópicos {} e {}...".format(self.__config['Topics']['Subscribe']['topic_is_alive'], self.__config['Topics']['Subscribe']['topic_raspberry']))

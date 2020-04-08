@@ -62,7 +62,7 @@ class Ultrassonico(object):
                 start = datetime.now() #inicia o temporizador de 30 seg
                 while self.distance() > 10 and not self.__end and datetime.now() <= time_stop - timedelta(seconds=60): # verifica se a distancia é maior que 10 (sem presença)
                     if datetime.now() >= start + timedelta(seconds=25) and not self.__end: # verifica se já se passaram 30 seg sem presença  e se o monitoramento nao foi encerrado
-                        msg = {'id': self.__id}
+                        msg = {'id': self.__id, 'time_msg': str(datetime.now())}
                         self.log('INFO - Ausencia detectada!')
                         self.log('INFO - Publicando: {}'.format(msg))
                         self.__client.publish(self.__topic_to_publish, json.dumps(msg))
@@ -89,8 +89,8 @@ class Ultrassonico(object):
         subscribe.callback(self.on_message_schedule, self.__topic_to_subscribe)
 
     def is_alive(self):
-        msg = {'atividade': self.__id}
-        self.log("INFO - Nó ativo.")
+        msg = {'atividade': self.__id, 'time_msg': str(datetime.now())}
+        self.log("INFO - Nó ativo: {}".format(msg))
         response = self.__client.publish(self.__topic_is_alive, json.dumps(msg))
         time.sleep(1)
         response.wait_for_publish()

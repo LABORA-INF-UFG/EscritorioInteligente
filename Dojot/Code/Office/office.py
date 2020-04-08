@@ -46,17 +46,16 @@ class Office(object):
                 return 1
         return 0
 
-    def set_node(self, status, index):
+    def set_node(self, status, index, time_msg):
         self.__nodes[index]['Status'] = status
-        self.__nodes[index]['Last_Update'] = datetime.now()
+        self.__nodes[index]['Last_Update'] = datetime.strptime(time_msg, '%Y-%m-%d %H:%M:%S.%f')
 
-    def set_last_update(self, index):
-        self.__nodes[index]['Is_alive'] = datetime.now()
+    def set_last_update(self, index, time_msg):
+        self.__nodes[index]['Is_alive'] = datetime.strptime(time_msg, '%Y-%m-%d %H:%M:%S.%f')
 
     def set_allNodes(self):
         for x in range(len(self.__nodes)):
             self.__nodes[x]['Status'] = False
-            self.__nodes[x]['Last_Update'] = datetime.now()
         #print(self.__nodes)
 
     def set_start(self, start):
