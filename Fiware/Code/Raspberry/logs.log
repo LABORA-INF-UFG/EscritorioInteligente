@@ -1,0 +1,374 @@
+2020-04-09 12:31:15.432495 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:31:15.433857 - INFO - Nó ativo: i|1|t2020-04-09 12:31:15.433837
+2020-04-09 12:31:25.861899 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:31:25.863269 - INFO - Nó ativo: i|2|t2020-04-09 12:31:25.863247
+2020-04-09 12:32:25.438126 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:32:25.439597 - INFO - Nó ativo: i|3|t2020-04-09 12:32:25.439574
+2020-04-09 12:38:26.511037 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:38:26.512623 - INFO - Nó ativo: i|2|t|2020-04-09 12:38:26.512594
+2020-04-09 12:38:29.707381 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:38:29.708562 - INFO - Nó ativo: i|3|t|2020-04-09 12:38:29.708541
+2020-04-09 12:38:32.794029 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:38:32.795266 - INFO - Nó ativo: i|1|t|2020-04-09 12:38:32.795244
+2020-04-09 12:38:57.160594 - INFO - Monitoramento finalizado.
+2020-04-09 12:38:57.163308 - INFO - Monitoramento finalizado.
+2020-04-09 12:38:57.163308 - INFO - Monitoramento finalizado.
+2020-04-09 12:40:59.562292 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:40:59.564143 - INFO - Nó ativo: i|1|t|2020-04-09 12:40:59.564115
+2020-04-09 12:41:11.179551 - INFO - Monitoramento finalizado.
+2020-04-09 12:42:00.431112 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:42:00.432549 - INFO - Nó ativo: i|1|t|2020-04-09 12:42:00.432527
+2020-04-09 12:42:12.479857 - INFO - Monitoramento finalizado.
+2020-04-09 12:43:02.727676 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:43:02.729092 - INFO - Nó ativo: i|1|t|2020-04-09 12:43:02.729069
+2020-04-09 12:43:11.451677 - INFO - Monitoramento finalizado.
+2020-04-09 12:43:45.822691 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:43:45.824072 - INFO - Nó ativo: i|1|t|2020-04-09 12:43:45.824052
+2020-04-09 12:43:50.473002 - INFO - Monitoramento finalizado.
+2020-04-09 12:44:50.441986 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:44:50.443334 - INFO - Nó ativo: i|1|t|2020-04-09 12:44:50.443311
+2020-04-09 12:44:57.251174 - INFO - Monitoramento finalizado.
+2020-04-09 12:46:12.007161 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:46:12.008484 - INFO - Nó ativo: i|1|t|2020-04-09 12:46:12.008467
+2020-04-09 12:46:21.318352 - INFO - Monitoramento finalizado.
+2020-04-09 12:47:23.576846 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:47:23.578143 - INFO - Nó ativo: i|1|t|2020-04-09 12:47:23.578123
+2020-04-09 12:47:34.082697 - INFO - Monitoramento finalizado.
+2020-04-09 12:48:42.203423 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:48:42.204761 - INFO - Nó ativo: i|1|t|2020-04-09 12:48:42.204715
+2020-04-09 12:48:48.767873 - INFO - Monitoramento finalizado.
+2020-04-09 12:50:51.790433 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:50:51.791708 - INFO - Nó ativo: i|1|t|2020-04-09 12:50:51.791689
+2020-04-09 12:51:06.606295 - INFO - Monitoramento Iniciado.
+2020-04-09 12:51:48.901706 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:51:48.903005 - INFO - Nó ativo: i|1|t|2020-04-09 12:51:48.902957
+2020-04-09 12:51:58.606207 - INFO - Monitoramento Iniciado.
+2020-04-09 12:52:32.777648 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:52:32.779005 - INFO - Nó ativo: i|1|t|2020-04-09 12:52:32.778985
+2020-04-09 12:53:39.336358 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:53:39.337589 - INFO - Nó ativo: i|1|t|2020-04-09 12:53:39.337563
+2020-04-09 12:54:11.375076 - INFO - Monitoramento Iniciado.
+2020-04-09 12:54:58.819010 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:54:58.820274 - INFO - Nó ativo: i|1|t|2020-04-09 12:54:58.820255
+2020-04-09 12:55:08.653659 - INFO - Monitoramento Iniciado.
+2020-04-09 12:59:50.712707 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 12:59:50.714080 - INFO - Nó ativo: i|1|t|2020-04-09 12:59:50.714053
+2020-04-09 13:00:08.127556 - INFO - Monitoramento Iniciado.
+2020-04-09 13:00:33.129247 - INFO - Ausencia detectada!
+2020-04-09 13:00:33.130717 - INFO - Publicando: i|1|t|2020-04-09 13:00:33.129214
+2020-04-09 13:01:07.900162 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 13:01:07.901493 - INFO - Nó ativo: i|1|t|2020-04-09 13:01:07.901466
+2020-04-09 13:01:20.500969 - INFO - Monitoramento Iniciado.
+2020-04-09 13:03:26.423703 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 13:03:26.425084 - INFO - Nó ativo: i|1|t|2020-04-09 13:03:26.425052
+2020-04-09 13:03:30.868524 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 13:03:30.869907 - INFO - Nó ativo: i|2|t|2020-04-09 13:03:30.869884
+2020-04-09 13:03:34.613893 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 13:03:34.615108 - INFO - Nó ativo: i|3|t|2020-04-09 13:03:34.615085
+2020-04-09 13:03:48.575012 - INFO - Monitoramento Iniciado.
+2020-04-09 13:03:48.575464 - INFO - Monitoramento Iniciado.
+2020-04-09 13:03:48.576679 - INFO - Monitoramento Iniciado.
+2020-04-09 13:04:13.576941 - INFO - Ausencia detectada!
+2020-04-09 13:04:13.577368 - INFO - Ausencia detectada!
+2020-04-09 13:04:13.578601 - INFO - Publicando: i|3|t|2020-04-09 13:04:13.576911
+2020-04-09 13:04:13.578911 - INFO - Publicando: i|1|t|2020-04-09 13:04:13.577341
+2020-04-09 13:04:13.578745 - INFO - Ausencia detectada!
+2020-04-09 13:04:13.580298 - INFO - Publicando: i|2|t|2020-04-09 13:04:13.578718
+2020-04-09 13:04:39.580893 - INFO - Ausencia detectada!
+2020-04-09 13:04:39.581483 - INFO - Ausencia detectada!
+2020-04-09 13:04:39.582894 - INFO - Publicando: i|3|t|2020-04-09 13:04:39.581463
+2020-04-09 13:04:39.582480 - INFO - Publicando: i|1|t|2020-04-09 13:04:39.580867
+2020-04-09 13:04:39.583632 - INFO - Ausencia detectada!
+2020-04-09 13:04:39.585321 - INFO - Publicando: i|2|t|2020-04-09 13:04:39.583610
+2020-04-09 13:05:05.585005 - INFO - Ausencia detectada!
+2020-04-09 13:05:05.586817 - INFO - Publicando: i|1|t|2020-04-09 13:05:05.584968
+2020-04-09 13:05:05.585395 - INFO - Ausencia detectada!
+2020-04-09 13:05:05.588081 - INFO - Ausencia detectada!
+2020-04-09 13:05:05.588390 - INFO - Publicando: i|3|t|2020-04-09 13:05:05.585360
+2020-04-09 13:05:05.590988 - INFO - Publicando: i|2|t|2020-04-09 13:05:05.588048
+2020-04-09 13:10:43.579333 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 13:10:43.580543 - INFO - Nó ativo: i|3|t|2020-04-09 13:10:43.580525
+2020-04-09 13:11:12.670221 - INFO - Monitoramento Iniciado.
+2020-04-09 13:11:37.671742 - INFO - Ausencia detectada!
+2020-04-09 13:11:37.672903 - INFO - Publicando: i|3|t|2020-04-09 13:11:37.671720
+2020-04-09 13:27:40.562464 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 13:27:40.563759 - INFO - Nó ativo: i|1|t|2020-04-09 13:27:40.563741
+2020-04-09 13:27:45.592696 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 13:27:45.593964 - INFO - Nó ativo: i|2|t|2020-04-09 13:27:45.593938
+2020-04-09 13:27:49.662723 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 13:27:49.664044 - INFO - Nó ativo: i|3|t|2020-04-09 13:27:49.664022
+2020-04-09 13:28:17.048660 - INFO - Monitoramento Iniciado.
+2020-04-09 13:28:17.048673 - INFO - Monitoramento Iniciado.
+2020-04-09 13:28:17.050201 - INFO - Monitoramento Iniciado.
+2020-04-09 13:28:42.050675 - INFO - Ausencia detectada!
+2020-04-09 13:28:42.051160 - INFO - Ausencia detectada!
+2020-04-09 13:28:42.052186 - INFO - Publicando: i|3|t|2020-04-09 13:28:42.050648
+2020-04-09 13:28:42.051889 - INFO - Ausencia detectada!
+2020-04-09 13:28:42.052690 - INFO - Publicando: i|1|t|2020-04-09 13:28:42.051135
+2020-04-09 13:28:42.053841 - INFO - Publicando: i|2|t|2020-04-09 13:28:42.051864
+2020-04-09 13:29:08.054356 - INFO - Ausencia detectada!
+2020-04-09 13:29:08.055737 - INFO - Ausencia detectada!
+2020-04-09 13:29:08.055865 - INFO - Publicando: i|3|t|2020-04-09 13:29:08.054332
+2020-04-09 13:29:08.056704 - INFO - Ausencia detectada!
+2020-04-09 13:29:08.057241 - INFO - Publicando: i|1|t|2020-04-09 13:29:08.055713
+2020-04-09 13:29:08.058339 - INFO - Publicando: i|2|t|2020-04-09 13:29:08.056684
+2020-04-09 13:29:34.058621 - INFO - Ausencia detectada!
+2020-04-09 13:29:34.060095 - INFO - Publicando: i|3|t|2020-04-09 13:29:34.058596
+2020-04-09 13:29:34.060457 - INFO - Ausencia detectada!
+2020-04-09 13:29:34.061029 - INFO - Ausencia detectada!
+2020-04-09 13:29:34.062007 - INFO - Publicando: i|1|t|2020-04-09 13:29:34.060436
+2020-04-09 13:29:34.062656 - INFO - Publicando: i|2|t|2020-04-09 13:29:34.061007
+2020-04-09 13:30:00.063022 - INFO - Ausencia detectada!
+2020-04-09 13:30:00.065066 - INFO - Ausencia detectada!
+2020-04-09 13:30:00.065043 - INFO - Ausencia detectada!
+2020-04-09 13:30:00.065573 - INFO - Publicando: i|3|t|2020-04-09 13:30:00.062975
+2020-04-09 13:30:00.067044 - INFO - Publicando: i|1|t|2020-04-09 13:30:00.065008
+2020-04-09 13:30:00.066802 - INFO - Publicando: i|2|t|2020-04-09 13:30:00.065034
+2020-04-09 13:30:26.069024 - INFO - Ausencia detectada!
+2020-04-09 13:30:26.069038 - INFO - Ausencia detectada!
+2020-04-09 13:30:26.070368 - INFO - Ausencia detectada!
+2020-04-09 13:30:26.070823 - INFO - Publicando: i|3|t|2020-04-09 13:30:26.068999
+2020-04-09 13:30:26.070846 - INFO - Publicando: i|1|t|2020-04-09 13:30:26.069021
+2020-04-09 13:30:26.071845 - INFO - Publicando: i|2|t|2020-04-09 13:30:26.070348
+2020-04-09 13:30:52.073334 - INFO - Ausencia detectada!
+2020-04-09 13:30:52.073309 - INFO - Ausencia detectada!
+2020-04-09 13:30:52.074869 - INFO - Ausencia detectada!
+2020-04-09 13:30:52.075128 - INFO - Publicando: i|1|t|2020-04-09 13:30:52.073314
+2020-04-09 13:30:52.075139 - INFO - Publicando: i|3|t|2020-04-09 13:30:52.073286
+2020-04-09 13:30:52.076354 - INFO - Publicando: i|2|t|2020-04-09 13:30:52.074850
+2020-04-09 13:31:18.077050 - INFO - Ausencia detectada!
+2020-04-09 13:31:18.077756 - INFO - Ausencia detectada!
+2020-04-09 13:31:18.078538 - INFO - Publicando: i|3|t|2020-04-09 13:31:18.077025
+2020-04-09 13:31:18.079122 - INFO - Publicando: i|1|t|2020-04-09 13:31:18.077736
+2020-04-09 13:31:18.079226 - INFO - Ausencia detectada!
+2020-04-09 13:31:18.080843 - INFO - Publicando: i|2|t|2020-04-09 13:31:18.079205
+2020-04-09 13:31:44.081124 - INFO - Ausencia detectada!
+2020-04-09 13:31:44.081894 - INFO - Ausencia detectada!
+2020-04-09 13:31:44.082555 - INFO - Publicando: i|3|t|2020-04-09 13:31:44.081101
+2020-04-09 13:31:44.083338 - INFO - Publicando: i|1|t|2020-04-09 13:31:44.081874
+2020-04-09 13:31:44.083827 - INFO - Ausencia detectada!
+2020-04-09 13:31:44.085842 - INFO - Publicando: i|2|t|2020-04-09 13:31:44.083800
+2020-04-09 13:32:10.085055 - INFO - Ausencia detectada!
+2020-04-09 13:32:10.085509 - INFO - Ausencia detectada!
+2020-04-09 13:32:10.086627 - INFO - Publicando: i|3|t|2020-04-09 13:32:10.085029
+2020-04-09 13:32:10.087004 - INFO - Publicando: i|1|t|2020-04-09 13:32:10.085491
+2020-04-09 13:32:10.089051 - INFO - Ausencia detectada!
+2020-04-09 13:32:10.090732 - INFO - Publicando: i|2|t|2020-04-09 13:32:10.089026
+2020-04-09 13:32:36.089046 - INFO - Ausencia detectada!
+2020-04-09 13:32:36.089240 - INFO - Ausencia detectada!
+2020-04-09 13:32:36.090854 - INFO - Publicando: i|3|t|2020-04-09 13:32:36.089217
+2020-04-09 13:32:36.090841 - INFO - Publicando: i|1|t|2020-04-09 13:32:36.089021
+2020-04-09 13:32:36.094447 - INFO - Ausencia detectada!
+2020-04-09 13:32:36.096097 - INFO - Publicando: i|2|t|2020-04-09 13:32:36.094417
+2020-04-09 13:32:41.763281 - INFO - Nó ativo: i|1|t|2020-04-09 13:32:41.763261
+2020-04-09 13:32:46.810366 - INFO - Nó ativo: i|2|t|2020-04-09 13:32:46.810348
+2020-04-09 13:32:50.874481 - INFO - Nó ativo: i|3|t|2020-04-09 13:32:50.874462
+2020-04-09 13:33:02.093086 - INFO - Ausencia detectada!
+2020-04-09 13:33:02.093088 - INFO - Ausencia detectada!
+2020-04-09 13:33:02.094539 - INFO - Publicando: i|3|t|2020-04-09 13:33:02.093064
+2020-04-09 13:33:02.094611 - INFO - Publicando: i|1|t|2020-04-09 13:33:02.093064
+2020-04-09 13:33:02.099411 - INFO - Ausencia detectada!
+2020-04-09 13:33:02.101523 - INFO - Publicando: i|2|t|2020-04-09 13:33:02.099386
+2020-04-09 13:33:28.097122 - INFO - Ausencia detectada!
+2020-04-09 13:33:28.097265 - INFO - Ausencia detectada!
+2020-04-09 13:33:28.099120 - INFO - Publicando: i|1|t|2020-04-09 13:33:28.097092
+2020-04-09 13:33:28.099129 - INFO - Publicando: i|3|t|2020-04-09 13:33:28.097241
+2020-04-09 13:33:28.104524 - INFO - Ausencia detectada!
+2020-04-09 13:33:28.106345 - INFO - Publicando: i|2|t|2020-04-09 13:33:28.104494
+2020-04-09 13:33:54.101066 - INFO - Ausencia detectada!
+2020-04-09 13:33:54.102516 - INFO - Publicando: i|1|t|2020-04-09 13:33:54.101042
+2020-04-09 13:33:54.102494 - INFO - Ausencia detectada!
+2020-04-09 13:33:54.103921 - INFO - Publicando: i|3|t|2020-04-09 13:33:54.102473
+2020-04-09 13:33:54.109082 - INFO - Ausencia detectada!
+2020-04-09 13:33:54.110628 - INFO - Publicando: i|2|t|2020-04-09 13:33:54.109052
+2020-04-09 13:34:20.105255 - INFO - Ausencia detectada!
+2020-04-09 13:34:20.106788 - INFO - Publicando: i|1|t|2020-04-09 13:34:20.105229
+2020-04-09 13:34:20.106854 - INFO - Ausencia detectada!
+2020-04-09 13:34:20.108525 - INFO - Publicando: i|3|t|2020-04-09 13:34:20.106830
+2020-04-09 13:34:20.112994 - INFO - Ausencia detectada!
+2020-04-09 13:34:20.114876 - INFO - Publicando: i|2|t|2020-04-09 13:34:20.112971
+2020-04-09 13:34:46.109090 - INFO - Ausencia detectada!
+2020-04-09 13:34:46.110552 - INFO - Publicando: i|1|t|2020-04-09 13:34:46.109067
+2020-04-09 13:34:46.111493 - INFO - Ausencia detectada!
+2020-04-09 13:34:46.113220 - INFO - Publicando: i|3|t|2020-04-09 13:34:46.111473
+2020-04-09 13:34:46.121070 - INFO - Ausencia detectada!
+2020-04-09 13:34:46.122838 - INFO - Publicando: i|2|t|2020-04-09 13:34:46.121045
+2020-04-09 13:35:12.113091 - INFO - Ausencia detectada!
+2020-04-09 13:35:12.114609 - INFO - Publicando: i|1|t|2020-04-09 13:35:12.113064
+2020-04-09 13:35:12.116395 - INFO - Ausencia detectada!
+2020-04-09 13:35:12.118183 - INFO - Publicando: i|3|t|2020-04-09 13:35:12.116365
+2020-04-09 13:35:12.125906 - INFO - Ausencia detectada!
+2020-04-09 13:35:12.128393 - INFO - Publicando: i|2|t|2020-04-09 13:35:12.125872
+2020-04-09 13:35:38.117214 - INFO - Ausencia detectada!
+2020-04-09 13:35:38.118688 - INFO - Publicando: i|1|t|2020-04-09 13:35:38.117191
+2020-04-09 13:35:38.121053 - INFO - Ausencia detectada!
+2020-04-09 13:35:38.122587 - INFO - Publicando: i|3|t|2020-04-09 13:35:38.121030
+2020-04-09 13:35:38.131832 - INFO - Ausencia detectada!
+2020-04-09 13:35:38.133369 - INFO - Publicando: i|2|t|2020-04-09 13:35:38.131806
+2020-04-09 13:36:04.121345 - INFO - Ausencia detectada!
+2020-04-09 13:36:04.122850 - INFO - Publicando: i|1|t|2020-04-09 13:36:04.121322
+2020-04-09 13:36:04.125060 - INFO - Ausencia detectada!
+2020-04-09 13:36:04.126812 - INFO - Publicando: i|3|t|2020-04-09 13:36:04.125034
+2020-04-09 13:36:04.136111 - INFO - Ausencia detectada!
+2020-04-09 13:36:04.137633 - INFO - Publicando: i|2|t|2020-04-09 13:36:04.136080
+2020-04-09 13:36:30.125393 - INFO - Ausencia detectada!
+2020-04-09 13:36:30.127153 - INFO - Publicando: i|1|t|2020-04-09 13:36:30.125365
+2020-04-09 13:36:30.129052 - INFO - Ausencia detectada!
+2020-04-09 13:36:30.131077 - INFO - Publicando: i|3|t|2020-04-09 13:36:30.129023
+2020-04-09 13:36:30.140448 - INFO - Ausencia detectada!
+2020-04-09 13:36:30.142031 - INFO - Publicando: i|2|t|2020-04-09 13:36:30.140422
+2020-04-09 13:36:56.130938 - INFO - Ausencia detectada!
+2020-04-09 13:36:56.132408 - INFO - Publicando: i|1|t|2020-04-09 13:36:56.130912
+2020-04-09 13:36:56.134641 - INFO - Ausencia detectada!
+2020-04-09 13:36:56.136249 - INFO - Publicando: i|3|t|2020-04-09 13:36:56.134613
+2020-04-09 13:36:56.146201 - INFO - Ausencia detectada!
+2020-04-09 13:36:56.147808 - INFO - Publicando: i|2|t|2020-04-09 13:36:56.146175
+2020-04-09 13:37:22.135134 - INFO - Ausencia detectada!
+2020-04-09 13:37:22.136704 - INFO - Publicando: i|1|t|2020-04-09 13:37:22.135105
+2020-04-09 13:37:22.139029 - INFO - Ausencia detectada!
+2020-04-09 13:37:22.140707 - INFO - Publicando: i|3|t|2020-04-09 13:37:22.138997
+2020-04-09 13:37:22.150743 - INFO - Ausencia detectada!
+2020-04-09 13:37:22.153132 - INFO - Publicando: i|2|t|2020-04-09 13:37:22.150709
+2020-04-09 13:37:41.786209 - INFO - Nó ativo: i|1|t|2020-04-09 13:37:41.786190
+2020-04-09 13:37:46.822659 - INFO - Nó ativo: i|2|t|2020-04-09 13:37:46.822640
+2020-04-09 13:37:48.139802 - INFO - Ausencia detectada!
+2020-04-09 13:37:48.141366 - INFO - Publicando: i|1|t|2020-04-09 13:37:48.139776
+2020-04-09 13:37:48.143780 - INFO - Ausencia detectada!
+2020-04-09 13:37:48.145780 - INFO - Publicando: i|3|t|2020-04-09 13:37:48.143749
+2020-04-09 13:37:48.157070 - INFO - Ausencia detectada!
+2020-04-09 13:37:48.158734 - INFO - Publicando: i|2|t|2020-04-09 13:37:48.157037
+2020-04-09 13:37:50.888211 - INFO - Nó ativo: i|3|t|2020-04-09 13:37:50.888192
+2020-04-09 13:38:14.144193 - INFO - Ausencia detectada!
+2020-04-09 13:38:14.145668 - INFO - Publicando: i|1|t|2020-04-09 13:38:14.144167
+2020-04-09 13:38:14.148735 - INFO - Ausencia detectada!
+2020-04-09 13:38:14.150732 - INFO - Publicando: i|3|t|2020-04-09 13:38:14.148709
+2020-04-09 13:38:14.161039 - INFO - Ausencia detectada!
+2020-04-09 13:38:14.162615 - INFO - Publicando: i|2|t|2020-04-09 13:38:14.161013
+2020-04-09 13:38:40.148435 - INFO - Ausencia detectada!
+2020-04-09 13:38:40.150126 - INFO - Publicando: i|1|t|2020-04-09 13:38:40.148407
+2020-04-09 13:38:40.153059 - INFO - Ausencia detectada!
+2020-04-09 13:38:40.154836 - INFO - Publicando: i|3|t|2020-04-09 13:38:40.153032
+2020-04-09 13:38:40.165069 - INFO - Ausencia detectada!
+2020-04-09 13:38:40.166607 - INFO - Publicando: i|2|t|2020-04-09 13:38:40.165043
+2020-04-09 13:39:06.153178 - INFO - Ausencia detectada!
+2020-04-09 13:39:06.154646 - INFO - Publicando: i|1|t|2020-04-09 13:39:06.153156
+2020-04-09 13:39:06.159072 - INFO - Ausencia detectada!
+2020-04-09 13:39:06.160484 - INFO - Publicando: i|3|t|2020-04-09 13:39:06.159049
+2020-04-09 13:39:06.169239 - INFO - Ausencia detectada!
+2020-04-09 13:39:06.170678 - INFO - Publicando: i|2|t|2020-04-09 13:39:06.169216
+2020-04-09 13:39:32.157094 - INFO - Ausencia detectada!
+2020-04-09 13:39:32.158607 - INFO - Publicando: i|1|t|2020-04-09 13:39:32.157069
+2020-04-09 13:39:32.164563 - INFO - Ausencia detectada!
+2020-04-09 13:39:32.166412 - INFO - Publicando: i|3|t|2020-04-09 13:39:32.164531
+2020-04-09 13:39:32.173381 - INFO - Ausencia detectada!
+2020-04-09 13:39:32.174887 - INFO - Publicando: i|2|t|2020-04-09 13:39:32.173358
+2020-04-09 13:39:58.161141 - INFO - Ausencia detectada!
+2020-04-09 13:39:58.162767 - INFO - Publicando: i|1|t|2020-04-09 13:39:58.161105
+2020-04-09 13:39:58.169083 - INFO - Ausencia detectada!
+2020-04-09 13:39:58.171172 - INFO - Publicando: i|3|t|2020-04-09 13:39:58.169040
+2020-04-09 13:39:58.177062 - INFO - Ausencia detectada!
+2020-04-09 13:39:58.179390 - INFO - Publicando: i|2|t|2020-04-09 13:39:58.177023
+2020-04-09 13:43:38.616348 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 13:43:38.617683 - INFO - Nó ativo: i|2|t|2020-04-09 13:43:38.617661
+2020-04-09 13:43:47.166278 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 13:43:47.167601 - INFO - Nó ativo: i|1|t|2020-04-09 13:43:47.167573
+2020-04-09 13:43:52.081804 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 13:43:52.083154 - INFO - Nó ativo: i|3|t|2020-04-09 13:43:52.083134
+2020-04-09 13:44:02.892911 - INFO - Monitoramento Iniciado.
+2020-04-09 13:44:02.894093 - INFO - Monitoramento Iniciado.
+2020-04-09 13:44:02.894402 - INFO - Monitoramento Iniciado.
+2020-04-09 13:44:27.894451 - INFO - Ausencia detectada!
+2020-04-09 13:44:27.895981 - INFO - Publicando: i|2|t|2020-04-09 13:44:27.894423
+2020-04-09 13:44:27.895821 - INFO - Ausencia detectada!
+2020-04-09 13:44:27.895807 - INFO - Ausencia detectada!
+2020-04-09 13:44:27.897313 - INFO - Publicando: i|3|t|2020-04-09 13:44:27.895793
+2020-04-09 13:44:27.897509 - INFO - Publicando: i|1|t|2020-04-09 13:44:27.895778
+2020-04-09 13:44:53.898818 - INFO - Ausencia detectada!
+2020-04-09 13:44:53.900308 - INFO - Publicando: i|2|t|2020-04-09 13:44:53.898796
+2020-04-09 13:44:53.900389 - INFO - Ausencia detectada!
+2020-04-09 13:44:53.900825 - INFO - Ausencia detectada!
+2020-04-09 13:44:53.901791 - INFO - Publicando: i|3|t|2020-04-09 13:44:53.900368
+2020-04-09 13:44:53.902281 - INFO - Publicando: i|1|t|2020-04-09 13:44:53.900803
+2020-04-09 13:45:19.903075 - INFO - Ausencia detectada!
+2020-04-09 13:45:19.904609 - INFO - Publicando: i|2|t|2020-04-09 13:45:19.903053
+2020-04-09 13:45:19.904759 - INFO - Ausencia detectada!
+2020-04-09 13:45:19.905231 - INFO - Ausencia detectada!
+2020-04-09 13:45:19.906378 - INFO - Publicando: i|3|t|2020-04-09 13:45:19.904736
+2020-04-09 13:45:19.906659 - INFO - Publicando: i|1|t|2020-04-09 13:45:19.905206
+2020-04-09 13:45:45.907145 - INFO - Ausencia detectada!
+2020-04-09 13:45:45.908678 - INFO - Publicando: i|2|t|2020-04-09 13:45:45.907123
+2020-04-09 13:45:45.909087 - INFO - Ausencia detectada!
+2020-04-09 13:45:45.909983 - INFO - Ausencia detectada!
+2020-04-09 13:45:45.910570 - INFO - Publicando: i|3|t|2020-04-09 13:45:45.909067
+2020-04-09 13:45:45.911990 - INFO - Publicando: i|1|t|2020-04-09 13:45:45.909950
+2020-04-09 13:46:11.911398 - INFO - Ausencia detectada!
+2020-04-09 13:46:11.912925 - INFO - Publicando: i|2|t|2020-04-09 13:46:11.911376
+2020-04-09 13:46:11.913792 - INFO - Ausencia detectada!
+2020-04-09 13:46:11.915224 - INFO - Publicando: i|3|t|2020-04-09 13:46:11.913771
+2020-04-09 13:46:11.915394 - INFO - Ausencia detectada!
+2020-04-09 13:46:11.916993 - INFO - Publicando: i|1|t|2020-04-09 13:46:11.915367
+2020-04-09 13:46:37.915579 - INFO - Ausencia detectada!
+2020-04-09 13:46:37.917077 - INFO - Publicando: i|2|t|2020-04-09 13:46:37.915557
+2020-04-09 13:46:37.918200 - INFO - Ausencia detectada!
+2020-04-09 13:46:37.919940 - INFO - Publicando: i|3|t|2020-04-09 13:46:37.918181
+2020-04-09 13:46:37.920089 - INFO - Ausencia detectada!
+2020-04-09 13:46:37.921954 - INFO - Publicando: i|1|t|2020-04-09 13:46:37.920060
+2020-04-09 13:47:03.919752 - INFO - Ausencia detectada!
+2020-04-09 13:47:03.921267 - INFO - Publicando: i|2|t|2020-04-09 13:47:03.919729
+2020-04-09 13:47:03.923208 - INFO - Ausencia detectada!
+2020-04-09 13:47:03.925377 - INFO - Publicando: i|3|t|2020-04-09 13:47:03.923185
+2020-04-09 13:47:03.925257 - INFO - Ausencia detectada!
+2020-04-09 13:47:03.926886 - INFO - Publicando: i|1|t|2020-04-09 13:47:03.925224
+2020-04-09 13:47:29.924051 - INFO - Ausencia detectada!
+2020-04-09 13:47:29.925598 - INFO - Publicando: i|2|t|2020-04-09 13:47:29.924027
+2020-04-09 13:47:29.928150 - INFO - Ausencia detectada!
+2020-04-09 13:47:29.930003 - INFO - Publicando: i|3|t|2020-04-09 13:47:29.928123
+2020-04-09 13:47:29.930188 - INFO - Ausencia detectada!
+2020-04-09 13:47:29.931913 - INFO - Publicando: i|1|t|2020-04-09 13:47:29.930154
+2020-04-09 13:47:55.928361 - INFO - Ausencia detectada!
+2020-04-09 13:47:55.929909 - INFO - Publicando: i|2|t|2020-04-09 13:47:55.928337
+2020-04-09 13:47:55.933007 - INFO - Ausencia detectada!
+2020-04-09 13:47:55.934894 - INFO - Publicando: i|3|t|2020-04-09 13:47:55.932976
+2020-04-09 13:47:55.935079 - INFO - Ausencia detectada!
+2020-04-09 13:47:55.936477 - INFO - Publicando: i|1|t|2020-04-09 13:47:55.935056
+2020-04-09 13:48:21.932533 - INFO - Ausencia detectada!
+2020-04-09 13:48:21.933958 - INFO - Publicando: i|2|t|2020-04-09 13:48:21.932510
+2020-04-09 13:48:21.937068 - INFO - Ausencia detectada!
+2020-04-09 13:48:21.938662 - INFO - Publicando: i|3|t|2020-04-09 13:48:21.937045
+2020-04-09 13:48:21.940501 - INFO - Ausencia detectada!
+2020-04-09 13:48:21.942240 - INFO - Publicando: i|1|t|2020-04-09 13:48:21.940468
+2020-04-09 13:48:39.817284 - INFO - Nó ativo: i|2|t|2020-04-09 13:48:39.817265
+2020-04-09 13:48:47.936402 - INFO - Ausencia detectada!
+2020-04-09 13:48:47.937926 - INFO - Publicando: i|2|t|2020-04-09 13:48:47.936379
+2020-04-09 13:48:47.941571 - INFO - Ausencia detectada!
+2020-04-09 13:48:47.943149 - INFO - Publicando: i|3|t|2020-04-09 13:48:47.941546
+2020-04-09 13:48:47.944992 - INFO - Ausencia detectada!
+2020-04-09 13:48:47.946556 - INFO - Publicando: i|1|t|2020-04-09 13:48:47.944966
+2020-04-09 13:48:48.334721 - INFO - Nó ativo: i|1|t|2020-04-09 13:48:48.334672
+2020-04-09 13:48:53.290296 - INFO - Nó ativo: i|3|t|2020-04-09 13:48:53.290278
+2020-04-09 13:49:13.940456 - INFO - Ausencia detectada!
+2020-04-09 13:49:13.941999 - INFO - Publicando: i|2|t|2020-04-09 13:49:13.940430
+2020-04-09 13:49:13.945941 - INFO - Ausencia detectada!
+2020-04-09 13:49:13.947446 - INFO - Publicando: i|3|t|2020-04-09 13:49:13.945914
+2020-04-09 13:49:13.949021 - INFO - Ausencia detectada!
+2020-04-09 13:49:13.950765 - INFO - Publicando: i|1|t|2020-04-09 13:49:13.948990
+2020-04-09 13:49:39.944779 - INFO - Ausencia detectada!
+2020-04-09 13:49:39.946330 - INFO - Publicando: i|2|t|2020-04-09 13:49:39.944752
+2020-04-09 13:49:39.950482 - INFO - Ausencia detectada!
+2020-04-09 13:49:39.952315 - INFO - Publicando: i|3|t|2020-04-09 13:49:39.950456
+2020-04-09 13:49:39.953019 - INFO - Ausencia detectada!
+2020-04-09 13:49:39.954753 - INFO - Publicando: i|1|t|2020-04-09 13:49:39.952992
+2020-04-09 13:50:02.507743 - INFO - Monitoramento finalizado.
+2020-04-09 13:50:02.507743 - INFO - Monitoramento finalizado.
+2020-04-09 13:50:02.512766 - INFO - Monitoramento finalizado.
+2020-04-09 13:53:39.811752 - INFO - Nó ativo: i|2|t|2020-04-09 13:53:39.811678
+2020-04-09 13:53:48.305210 - INFO - Nó ativo: i|1|t|2020-04-09 13:53:48.305154
+2020-04-09 13:58:24.647019 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 13:58:24.648313 - INFO - Nó ativo: i|1|t|2020-04-09 13:58:24.648291
+2020-04-09 13:59:20.448279 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 13:59:20.449791 - INFO - Nó ativo: i|1|t|2020-04-09 13:59:20.449764
+2020-04-09 14:04:21.594504 - INFO - Nó ativo: i|1|t|2020-04-09 14:04:21.594466
+2020-04-09 14:11:31.827003 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 14:11:31.828450 - INFO - Nó ativo: i|1|t|2020-04-09 14:11:31.828424
+2020-04-09 14:23:46.398772 - INFO - Subscribing to topic /admin/249eb4/config...
+2020-04-09 14:23:46.400007 - INFO - Nó ativo: i|1|t|2020-04-09 14:23:46.399989

@@ -2,8 +2,6 @@ Nodes:
       - ID: 01
       - ID: 02
       - ID: 03
-      - ID: 04
-      - ID: 05
 
 Email:
       Username_sender: 'escritoriointeligente123@gmail.com'
@@ -13,5 +11,11 @@ Email:
       Message: 'Teste'
 
 Topics:
-      topic_scheduler: '/4jggokgpepnvsb2uv4s40d59ov/relogio001/attrs'
-      topic_raspberry: '/4jggokgpepnvsb2uv4s40d59ov/motion001/attrs'
+      Subscribe:
+         topic_scheduler: '/4jggokgpepnvsb2uv4s40d59ov/relogio01/attrs'
+         topic_raspberry: '/4jggokgpepnvsb2uv4s40d59ov/raspberry/attrs'
+         topic_is_alive: '/4jggokgpepnvsb2uv4s40d59ov/raspberry_controle/attrs'
+      Publish:
+         topic_scheduler: '/4jggokgpepnvsb2uv4s40d59ov/relogio01/attrs'
+         topic_raspberry: '/4jggokgpepnvsb2uv4s40d59ov/raspberry/attrs'
+         topic_is_alive: '/4jggokgpepnvsb2uv4s40d59ov/raspberry_controle/attrs'

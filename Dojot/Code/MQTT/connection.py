@@ -43,11 +43,13 @@ class Connection(object):
             logs.log('ERROR - Não foi possível encerrar a conexão com o broker MQTT!')
 
     def on_message_schedule(self, client, userdata, message):
-        end = datetime.strptime(json.loads(message.payload)['fim'], '%Y-%m-%d %H:%M:%S.%f')
-        self.__office.set_stop(end)
-        self.__office.set_allNodes()
-        _thread.start_new_thread(self.monitoring(), )
-
+        try:
+            end = datetime.strptime(json.loads(message.payload)['fim'], '%Y-%m-%d %H:%M:%S.%f')
+            self.__office.set_stop(end)
+            self.__office.set_allNodes()
+            _thread.start_new_thread(self.monitoring(), )
+        except:
+            pass
         #self.__mail.send_email('escritoriointeligente123@gmail.com', 'franciellysouza552@gmail.com', 'teste ', 'oi')
     
     def subscribe_schedule(self):
