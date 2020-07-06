@@ -1,0 +1,53 @@
+from datetime import datetime, date, timedelta
+class SchedulingSimulator():
+     
+    def __init__(self):
+        self.__msg = None
+
+    def get_times(self):
+        times = [{'i':datetime.strptime('2020-07-05 15:42:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-05 16:40:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-05 16:40:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-05 17:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-05 17:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-05 18:10:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-05 18:10:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-05 19:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-05 19:00:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-05 19:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-05 20:10:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-05 21:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-05 21:00:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-05 21:40:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-05 22:20:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-05 23:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-05 23:00:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-05 23:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-05 23:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 00:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 00:00:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 00:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 00:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 06:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 06:00:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 06:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 06:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 02:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 02:00:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 02:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 02:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 03:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 03:00:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 03:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 03:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 04:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 04:06:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 04:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 04:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 05:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 05:10:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 05:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 05:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 06:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')},
+            {'i':datetime.strptime('2020-07-06 06:06:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 06:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 06:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 07:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 07:10:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 07:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 07:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 08:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')},
+            {'i':datetime.strptime('2020-07-06 08:06:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 08:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 08:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 09:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 09:10:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 09:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 09:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 10:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')},
+            {'i':datetime.strptime('2020-07-06 10:06:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 10:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 10:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 11:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 11:10:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 11:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 11:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 12:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')},
+            {'i':datetime.strptime('2020-07-06 12:06:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 12:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 12:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 13:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 13:10:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 13:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 13:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 14:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')},
+            {'i':datetime.strptime('2020-07-06 14:06:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 14:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 14:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 15:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 15:10:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 15:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 15:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 16:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')},
+            {'i':datetime.strptime('2020-07-06 16:06:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 16:30:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 16:30:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 17:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')}, 
+            {'i':datetime.strptime('2020-07-06 18:28:00.158216', '%Y-%m-%d %H:%M:%S.%f'), 'f': datetime.strptime('2020-07-06 19:00:00.158216', '%Y-%m-%d %H:%M:%S.%f')}]
+        return times

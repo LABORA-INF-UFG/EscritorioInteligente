@@ -1,0 +1,102 @@
+from Email.email import Email
+from Office import logs
+from datetime import datetime, date, timedelta
+import yaml, time, os
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+
+try:
+    import asyncio
+except ImportError:
+    import trollius as asyncio
+
+class Office(object):
+    def __init__(self, config):
+        self.__msg = None
+        self.__id = None
+        self.__config = config
+        self.__tenant = None
+        self.__start = None
+        self.__stop = None
+        self.__nodes = []
+        for x in range(1, config['room']['nodes']+1):
+            node = {'ID': x, 'Status': False, 'Last_Update': datetime.now()}
+            self.__nodes.append(node)
+        #self.scheduler()
+        
+
+    def get_start(self):
+        return self.__start
+    
+    def get_stop(self):
+        return self.__stop
+
+    def get_nodes(self):
+        return self.__nodes
+
+    def get_allNodes(self):
+        for node in self.__nodes:
+            if not node['Status']:
+                return 0
+        #print(self.__nodes)
+        return 1
+
+    def get_oneNode(self):
+        for node in self.__nodes:
+            if node['Status']:
+                logs.log("INFO - Identificada a ausência de pessoas em regiões do ambiente.")
+                return 1
+        return 0
+
+    def set_node(self, status, index, time_msg):
+        self.__nodes[index]['Status'] = status
+        self.__nodes[index]['Last_Update'] = datetime.strptime(time_msg, '%Y-%m-%d %H:%M:%S.%f')
+
+    def set_allNodes(self):
+        for x in range(len(self.__nodes)):
+            self.__nodes[x]['Status'] = False
+        #print(self.__nodes)
+
+    def set_start(self, start):
+        self.__start = start
+
+    def set_stop(self, stop):
+        self.__stop = stop
+
+    def last_update(self): #verifca se a ultima atualização de cada nó foi há mais de 30 seg atrás
+        now = datetime.now()
+        for node in self.__nodes:
+            if node['Last_Update'] < now - timedelta(seconds=30):
+                return 0
+        return 1
+
+    def check_availability(self):
+        logs.log("INFO - Monitoramento iniciado.")
+        while self.__stop >= datetime.now()+timedelta(minutes=5): #monitora até 5min antes do fim da reuniao
+            if self.get_oneNode() == 1: #recebe resposta de pelo menos um sensor"
+                time.sleep(30)# aguarda 30 segundos
+                if self.get_allNodes() == 1: #verifica se os outros sensores enviam resposta"
+                    logs.log("INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.")
+                    start = datetime.now()
+                    while self.last_update() == 1: # enquanto todos os sensores ainda estão detectando ausencia
+                        if datetime.now() >= start + timedelta(minutes=self.__config['set_times']['cancel_booking']): # verifica se já se passaram 15 min sem presença
+                            logs.log("INFO - Ambiente disponível!") 
+                            if self.__stop >= datetime.now()+timedelta(minutes=self.__config['set_times']['cancel_booking']):
+                                subject = self.__config['email']['availability']['subject']
+                                msg = self.__config['email']['availability']['message']
+                                email = Email()
+                                email.send_email(subject, msg)
+                            return 1
+                        elif ((datetime.now() - start).seconds % 300) == 0:
+                            minutes = (datetime.now() - start).seconds//60
+                            if (minutes != 0):
+                                logs.log("INFO - Ambiente vazio há {} minutos.".format(minutes))
+                        time.sleep(1)
+                    if self.__stop >= datetime.now()+timedelta(minutes=10):
+                        logs.log("INFO - Identificada a presença de pessoas no ambiente!")
+                else: # se os outros sensores nao enviam          
+                    pass
+                self.set_allNodes()  # False
+            time.sleep(1)
+        return 0
+
+    

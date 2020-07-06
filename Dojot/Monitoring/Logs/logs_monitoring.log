@@ -1,0 +1,324 @@
+2020-07-05 14:42:20.265525 - INFO - Subscrevendo no tópico /admin/249eb4/config...
+2020-07-05 14:42:20.267617 - INFO - Subscrevendo nos tópicos /admin/4f30e2/config e /admin/17f28c/attrs...
+2020-07-05 14:45:41.337993 - INFO - Monitoramento Iniciado.
+2020-07-05 14:46:57.791941 - INFO - Subscrevendo nos tópicos /admin/4f30e2/config e /admin/17f28c/attrs...
+2020-07-05 14:46:57.792016 - INFO - Subscrevendo no tópico /admin/249eb4/config...
+2020-07-05 14:47:07.651263 - INFO - Monitoramento Iniciado.
+2020-07-05 14:51:29.831364 - INFO - Subscrevendo no tópico /admin/249eb4/config...
+2020-07-05 14:51:29.832345 - INFO - Subscrevendo nos tópicos /admin/4f30e2/config e /admin/17f28c/attrs...
+2020-07-05 14:51:54.060563 - INFO - Monitoramento Iniciado.
+2020-07-05 14:55:27.523618 - INFO - Subscrevendo nos tópicos /admin/4f30e2/config e /admin/17f28c/config...
+2020-07-05 14:55:27.524123 - INFO - Subscrevendo no tópico /admin/249eb4/config...
+2020-07-05 14:55:55.743596 - INFO - Monitoramento Iniciado.
+2020-07-05 14:56:55.798407 - INFO - Ausência detectada! Temporizador iniciado.
+2020-07-05 15:00:45.026630 - INFO - Presença detectada!
+2020-07-05 15:01:20.063168 - INFO - Ausência detectada! Temporizador iniciado.
+2020-07-05 15:03:28.320472 - INFO - Subscrevendo nos tópicos /admin/4f30e2/config e /admin/17f28c/config...
+2020-07-05 15:03:28.321114 - INFO - Subscrevendo no tópico /admin/249eb4/config...
+2020-07-05 15:04:09.104914 - INFO - Monitoramento Iniciado.
+2020-07-05 15:04:39.134387 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-05 15:05:09.169151 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-05 15:10:09.490578 - INFO - Ambiente vazio há 5 minutos.
+2020-07-05 15:15:09.807971 - INFO - Ambiente vazio há 10 minutos.
+2020-07-05 15:17:38.958442 - INFO - Identificada a presença de pessoas no ambiente!
+2020-07-05 15:17:43.972851 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-05 15:18:14.006376 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-05 15:23:14.330338 - INFO - Ambiente vazio há 5 minutos.
+2020-07-05 15:28:14.647879 - INFO - Ambiente vazio há 10 minutos.
+2020-07-05 15:33:14.978302 - INFO - Ambiente disponível!
+2020-07-05 15:33:18.743516 - INFO - E-mail enviado!
+2020-07-05 15:33:18.748623 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-05 15:33:20.754418 - INFO - Monitoramento encerrado.
+2020-07-05 15:41:39.004671 - INFO - Monitoramento Iniciado.
+2020-07-05 15:42:09.034323 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-05 15:42:39.062720 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-05 15:47:39.390953 - INFO - Ambiente vazio há 5 minutos.
+2020-07-05 15:52:39.716141 - INFO - Ambiente vazio há 10 minutos.
+2020-07-05 15:57:40.031659 - INFO - Ambiente disponível!
+2020-07-05 15:57:43.932061 - INFO - E-mail enviado!
+2020-07-05 15:57:43.937401 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-05 15:57:45.944789 - INFO - Monitoramento encerrado.
+2020-07-05 16:39:41.589069 - INFO - Monitoramento Iniciado.
+2020-07-05 16:40:11.614439 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-05 16:40:41.646408 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-05 16:45:41.965850 - INFO - Ambiente vazio há 5 minutos.
+2020-07-05 16:48:51.158625 - INFO - Identificada a presença de pessoas no ambiente!
+2020-07-05 16:49:16.182488 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-05 16:49:46.214376 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-05 16:54:46.526668 - INFO - Ambiente vazio há 5 minutos.
+2020-07-05 16:56:39.646606 - INFO - Identificada a presença de pessoas no ambiente!
+2020-07-05 16:56:44.654370 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-05 16:57:14.686428 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-05 16:57:14.692064 - INFO - Identificada a presença de pessoas no ambiente!
+2020-07-05 16:57:34.710407 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-05 16:58:04.742279 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-05 17:03:05.061622 - INFO - Ambiente vazio há 5 minutos.
+2020-07-05 17:08:05.371209 - INFO - Ambiente vazio há 10 minutos.
+2020-07-05 17:13:05.683601 - INFO - Ambiente disponível!
+2020-07-05 17:13:09.508554 - INFO - E-mail enviado!
+2020-07-05 17:13:09.514942 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-05 17:13:11.522328 - INFO - Monitoramento encerrado.
+2020-07-05 17:29:41.558278 - INFO - Monitoramento Iniciado.
+2020-07-05 17:30:11.586464 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-05 17:30:41.618397 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-05 17:35:41.935605 - INFO - Ambiente vazio há 5 minutos.
+2020-07-05 17:40:42.243646 - INFO - Ambiente vazio há 10 minutos.
+2020-07-05 17:45:42.557797 - INFO - Ambiente disponível!
+2020-07-05 17:45:46.386779 - INFO - E-mail enviado!
+2020-07-05 17:45:46.392828 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-05 17:45:48.400943 - INFO - Monitoramento encerrado.
+2020-07-05 18:09:41.781467 - INFO - Monitoramento Iniciado.
+2020-07-05 18:10:11.815563 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-05 18:10:41.850401 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-05 18:15:42.165803 - INFO - Ambiente vazio há 5 minutos.
+2020-07-05 18:20:42.490398 - INFO - Ambiente vazio há 10 minutos.
+2020-07-05 18:25:42.809322 - INFO - Ambiente disponível!
+2020-07-05 18:25:46.822741 - INFO - E-mail enviado!
+2020-07-05 18:25:46.828933 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-05 18:25:48.837312 - INFO - Monitoramento encerrado.
+2020-07-05 18:59:41.529986 - INFO - Monitoramento Iniciado.
+2020-07-05 19:00:11.558332 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-05 19:00:41.590656 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-05 19:05:41.902635 - INFO - Ambiente vazio há 5 minutos.
+2020-07-05 19:10:42.222427 - INFO - Ambiente vazio há 10 minutos.
+2020-07-05 19:15:21.525397 - INFO - Identificada a presença de pessoas no ambiente!
+2020-07-05 19:15:46.550382 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-05 19:16:16.585510 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-05 19:21:16.884746 - INFO - Ambiente vazio há 5 minutos.
+2020-07-05 19:24:33.082452 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-05 19:25:03.118305 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-05 19:29:19.374524 - INFO - Monitoramento encerrado.
+2020-07-05 20:09:41.124211 - INFO - Monitoramento Iniciado.
+2020-07-05 20:10:11.153906 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-05 20:10:41.162017 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-05 20:13:28.490404 - WARNING - Nó com ID = 1 não responde desde 2020-07-05 19:53:38.053160!
+2020-07-05 20:15:41.476327 - INFO - Ambiente vazio há 5 minutos.
+2020-07-05 20:18:28.498375 - WARNING - Nó com ID = 1 não responde desde 2020-07-05 19:53:38.053160!
+2020-07-05 20:20:41.796366 - INFO - Ambiente vazio há 10 minutos.
+2020-07-05 20:23:28.496622 - WARNING - Nó com ID = 1 não responde desde 2020-07-05 19:53:38.053160!
+2020-07-05 20:25:42.106032 - INFO - Ambiente disponível!
+2020-07-05 20:25:46.192132 - INFO - E-mail enviado!
+2020-07-05 20:25:46.199167 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-05 20:25:48.209694 - INFO - Monitoramento encerrado.
+2020-07-05 20:28:28.497820 - WARNING - Nó com ID = 1 não responde desde 2020-07-05 19:53:38.053160!
+2020-07-05 20:28:37.416508 - INFO - Subscrevendo no tópico /admin/249eb4/config...
+2020-07-05 20:28:37.417050 - INFO - Subscrevendo nos tópicos /admin/4f30e2/config e /admin/17f28c/config...
+2020-07-05 20:59:32.969735 - INFO - Monitoramento Iniciado.
+2020-07-05 21:00:03.002082 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-05 21:00:33.038031 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-05 21:05:33.334095 - INFO - Ambiente disponível!
+2020-07-05 21:05:37.328406 - INFO - E-mail enviado!
+2020-07-05 21:05:37.335227 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-05 21:05:39.344137 - INFO - Monitoramento encerrado.
+2020-07-05 21:41:31.669079 - INFO - Subscrevendo no tópico /admin/249eb4/config...
+2020-07-05 21:41:31.669663 - INFO - Subscrevendo nos tópicos /admin/4f30e2/config e /admin/17f28c/config...
+2020-07-05 22:19:33.196878 - INFO - Monitoramento Iniciado.
+2020-07-05 22:20:03.230030 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-05 22:20:33.264875 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-05 22:25:33.566962 - INFO - Ambiente vazio há 5 minutos.
+2020-07-05 22:30:33.864347 - INFO - Ambiente vazio há 10 minutos.
+2020-07-05 22:35:34.165392 - INFO - Ambiente disponível!
+2020-07-05 22:35:37.689432 - INFO - E-mail enviado!
+2020-07-05 22:35:37.695452 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-05 22:35:39.704069 - INFO - Monitoramento encerrado.
+2020-07-05 22:59:33.069076 - INFO - Monitoramento Iniciado.
+2020-07-05 23:00:03.099293 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-05 23:00:33.134930 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-05 23:05:33.437536 - INFO - Ambiente vazio há 5 minutos.
+2020-07-05 23:10:33.739945 - INFO - Ambiente vazio há 10 minutos.
+2020-07-05 23:15:34.039254 - INFO - Ambiente disponível!
+2020-07-05 23:15:34.046406 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-05 23:15:36.056919 - INFO - Monitoramento encerrado.
+2020-07-05 23:29:33.389257 - INFO - Monitoramento Iniciado.
+2020-07-05 23:30:03.423144 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-05 23:30:33.459615 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-05 23:35:33.757142 - INFO - Ambiente vazio há 5 minutos.
+2020-07-05 23:40:34.055138 - INFO - Ambiente vazio há 10 minutos.
+2020-07-05 23:45:34.350056 - INFO - Ambiente disponível!
+2020-07-05 23:45:34.355631 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-05 23:45:36.365612 - INFO - Monitoramento encerrado.
+2020-07-05 23:59:33.157464 - INFO - Monitoramento Iniciado.
+2020-07-06 00:00:03.186003 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 00:00:33.219030 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 00:05:33.518011 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 00:10:33.830048 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 00:15:33.346000 - INFO - Ambiente disponível!
+2020-07-06 00:15:33.352697 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 00:15:35.362020 - INFO - Monitoramento encerrado.
+2020-07-06 00:29:33.769060 - INFO - Monitoramento Iniciado.
+2020-07-06 00:30:03.799090 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 00:30:33.830000 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 00:35:34.135213 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 00:40:34.436311 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 00:45:34.739177 - INFO - Ambiente disponível!
+2020-07-06 00:45:38.460563 - INFO - E-mail enviado!
+2020-07-06 00:45:38.467532 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 00:45:40.476198 - INFO - Monitoramento encerrado.
+2020-07-06 01:59:33.133190 - INFO - Monitoramento Iniciado.
+2020-07-06 02:00:03.166018 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 02:00:33.201973 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 02:05:33.510090 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 02:10:33.812151 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 02:15:34.114019 - INFO - Ambiente disponível!
+2020-07-06 02:15:34.120064 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 02:15:36.129280 - INFO - Monitoramento encerrado.
+2020-07-06 02:29:33.028589 - INFO - Monitoramento Iniciado.
+2020-07-06 02:30:03.062890 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 02:30:33.093965 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 02:35:33.392479 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 02:40:33.693985 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 02:45:33.994046 - INFO - Ambiente disponível!
+2020-07-06 02:45:34.002465 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 02:45:36.010026 - INFO - Monitoramento encerrado.
+2020-07-06 02:59:32.991307 - INFO - Monitoramento Iniciado.
+2020-07-06 03:00:03.021993 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 03:00:33.054473 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 03:05:33.352429 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 03:10:33.649593 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 03:15:33.947572 - INFO - Ambiente disponível!
+2020-07-06 03:15:33.955369 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 03:15:35.962552 - INFO - Monitoramento encerrado.
+2020-07-06 03:29:33.279483 - INFO - Monitoramento Iniciado.
+2020-07-06 03:30:03.314043 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 03:30:33.349892 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 03:35:33.644212 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 03:40:33.949364 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 03:45:34.248913 - INFO - Ambiente disponível!
+2020-07-06 03:45:34.256517 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 03:45:36.265276 - INFO - Monitoramento encerrado.
+2020-07-06 04:05:32.953206 - INFO - Monitoramento Iniciado.
+2020-07-06 04:06:02.985998 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 04:06:33.018855 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 04:11:33.320376 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 04:16:33.617954 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 04:21:33.915150 - INFO - Ambiente disponível!
+2020-07-06 04:21:33.921385 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 04:21:35.929935 - INFO - Monitoramento encerrado.
+2020-07-06 04:29:32.911522 - INFO - Monitoramento Iniciado.
+2020-07-06 04:30:02.938782 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 04:30:32.973885 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 04:35:33.268356 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 04:40:33.565297 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 04:45:33.869375 - INFO - Ambiente disponível!
+2020-07-06 04:45:33.876340 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 04:45:35.885280 - INFO - Monitoramento encerrado.
+2020-07-06 05:09:33.050649 - INFO - Monitoramento Iniciado.
+2020-07-06 05:10:03.078036 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 05:10:33.113971 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 05:15:33.418086 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 05:20:33.718020 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 05:25:34.020457 - INFO - Ambiente disponível!
+2020-07-06 05:25:34.023535 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 05:25:36.029049 - INFO - Monitoramento encerrado.
+2020-07-06 05:29:33.329471 - INFO - Monitoramento Iniciado.
+2020-07-06 05:30:03.361999 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 05:30:33.397970 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 05:35:33.700885 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 05:40:34.004408 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 05:45:34.311183 - INFO - Ambiente disponível!
+2020-07-06 05:45:34.318351 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 05:45:36.326238 - INFO - Monitoramento encerrado.
+2020-07-06 05:59:33.233752 - INFO - Monitoramento Iniciado.
+2020-07-06 06:00:03.265886 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:00:33.293992 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 06:05:33.600267 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 06:05:40.614162 - INFO - Identificada a presença de pessoas no ambiente!
+2020-07-06 06:06:05.637896 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:06:45.677981 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:07:25.721921 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:08:05.757963 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:08:40.794066 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:09:15.830040 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:10:10.886023 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:11:00.938047 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:11:40.982007 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:12:21.026010 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:13:11.073917 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:13:46.110022 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:14:31.158001 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:15:21.211126 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:15:56.250025 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:16:41.297784 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:17:31.346056 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:18:06.386032 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:18:51.434001 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:19:41.486004 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:20:16.526053 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:21:01.574367 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:21:51.626818 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:22:26.666017 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:23:06.706008 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:23:56.757998 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:24:46.809887 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:25:21.846050 - INFO - Monitoramento encerrado.
+2020-07-06 06:29:33.065998 - INFO - Monitoramento Iniciado.
+2020-07-06 06:29:33.070730 - INFO - Monitoramento encerrado.
+2020-07-06 06:29:35.222117 - INFO - Monitoramento Iniciado.
+2020-07-06 06:30:05.254006 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 06:30:35.289963 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 06:35:35.592266 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 06:40:35.890042 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 06:45:36.197455 - INFO - Ambiente disponível!
+2020-07-06 06:45:36.204165 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 06:45:38.214137 - INFO - Monitoramento encerrado.
+2020-07-06 07:09:32.978285 - INFO - Monitoramento Iniciado.
+2020-07-06 07:10:03.010002 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 07:10:33.045955 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 07:15:33.344088 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 07:20:33.645994 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 07:25:33.944882 - INFO - Ambiente disponível!
+2020-07-06 07:25:33.951163 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 07:25:35.958014 - INFO - Monitoramento encerrado.
+2020-07-06 07:29:33.011501 - INFO - Monitoramento Iniciado.
+2020-07-06 07:30:03.041934 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 07:30:33.074009 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 07:35:33.374811 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 07:40:33.672232 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 07:45:33.969527 - INFO - Ambiente disponível!
+2020-07-06 07:45:33.971282 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 07:45:35.973991 - INFO - Monitoramento encerrado.
+2020-07-06 08:05:33.040506 - INFO - Monitoramento Iniciado.
+2020-07-06 08:06:03.074014 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 08:06:33.105974 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 08:11:33.405609 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 08:16:33.704460 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 08:21:34.012298 - INFO - Ambiente disponível!
+2020-07-06 08:21:34.018684 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 08:21:36.026623 - INFO - Monitoramento encerrado.
+2020-07-06 08:29:33.090082 - INFO - Monitoramento Iniciado.
+2020-07-06 08:30:03.121994 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 08:30:33.155782 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 08:35:33.467280 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 08:40:33.774030 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 08:43:02.931307 - INFO - Identificada a presença de pessoas no ambiente!
+2020-07-06 08:43:17.949989 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 08:43:47.986376 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 08:48:48.311604 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 08:53:48.622680 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 08:58:48.934018 - INFO - Ambiente disponível!
+2020-07-06 08:58:48.940320 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 08:58:50.948890 - INFO - Monitoramento encerrado.
+2020-07-06 09:09:33.072048 - INFO - Monitoramento Iniciado.
+2020-07-06 09:10:03.101991 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 09:10:33.134143 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 09:15:33.448302 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 09:20:33.749539 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 09:25:34.055221 - INFO - Ambiente disponível!
+2020-07-06 09:25:34.061678 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 09:25:36.069838 - INFO - Monitoramento encerrado.
+2020-07-06 09:29:33.614407 - INFO - Monitoramento Iniciado.
+2020-07-06 09:30:03.641995 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 09:30:33.673933 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 09:35:33.972064 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 09:40:34.282433 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 09:45:34.596860 - INFO - Ambiente disponível!
+2020-07-06 09:45:34.603115 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 09:45:36.609994 - INFO - Monitoramento encerrado.
+2020-07-06 10:05:33.436808 - INFO - Monitoramento Iniciado.
+2020-07-06 10:06:03.465994 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-07-06 10:06:33.500775 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-07-06 10:11:33.830438 - INFO - Ambiente vazio há 5 minutos.
+2020-07-06 10:16:34.146096 - INFO - Ambiente vazio há 10 minutos.
+2020-07-06 10:21:34.469695 - INFO - Ambiente disponível!
+2020-07-06 10:21:34.475786 - INFO - Publicando: {"termino_monitoramento": true}
+2020-07-06 10:21:36.484364 - INFO - Monitoramento encerrado.

@@ -1,0 +1,197 @@
+2020-04-25 12:56:09.143130 - INFO - Subscrevendo nos tópicos /4jggokgpepnvsb2uv4s40d59ov/raspberry_controle/attrs e /4jggokgpepnvsb2uv4s40d59ov/raspberry/attrs...
+2020-04-25 12:56:09.144425 - INFO - Subscrevendo no tópico /4jggokgpepnvsb2uv4s40d59ov/relogio01/attrs...
+2020-04-25 12:58:29.938890 - INFO - Subscrevendo no tópico /4jggokgpepnvsb2uv4s40d59ov/relogio01/attrs...
+2020-04-25 12:58:29.938842 - INFO - Subscrevendo nos tópicos /4jggokgpepnvsb2uv4s40d59ov/raspberry_controle/attrs e /4jggokgpepnvsb2uv4s40d59ov/raspberry/attrs...
+2020-04-25 13:05:09.277837 - INFO - Subscrevendo no tópico /4jggokgpepnvsb2uv4s40d59ov/relogio01/attrs...
+2020-04-25 13:05:09.278327 - INFO - Subscrevendo nos tópicos /4jggokgpepnvsb2uv4s40d59ov/raspberry_controle/attrs e /4jggokgpepnvsb2uv4s40d59ov/raspberry/attrs...
+2020-04-25 13:05:47.708351 - INFO - Subscrevendo no tópico /4jggokgpepnvsb2uv4s40d59ov/relogio01/attrs...
+2020-04-25 13:05:47.708997 - INFO - Subscrevendo nos tópicos /4jggokgpepnvsb2uv4s40d59ov/raspberry_controle/attrs e /4jggokgpepnvsb2uv4s40d59ov/raspberry/attrs...
+2020-04-25 13:06:12.901503 - INFO - Subscrevendo nos tópicos /4jggokgpepnvsb2uv4s40d59ov/raspberry_controle/attrs e /4jggokgpepnvsb2uv4s40d59ov/raspberry/attrs...
+2020-04-25 13:06:12.901568 - INFO - Subscrevendo no tópico /4jggokgpepnvsb2uv4s40d59ov/relogio01/attrs...
+2020-04-25 13:07:58.033130 - INFO - Subscrevendo no tópico /4jggokgpepnvsb2uv4s40d59ov/relogio01/attrs...
+2020-04-25 13:07:58.035044 - INFO - Subscrevendo nos tópicos /4jggokgpepnvsb2uv4s40d59ov/raspberry_controle/attrs e /4jggokgpepnvsb2uv4s40d59ov/raspberry/attrs...
+2020-04-25 13:09:46.574118 - INFO - Monitoramento iniciado.
+2020-04-25 13:17:58.205005 - WARNING - Nó com ID = 2 não responde desde 2020-04-25 13:07:58.025501!
+2020-04-25 13:18:03.464765 - INFO - E-mail enviado!
+2020-04-25 13:18:03.466465 - WARNING - Nó com ID = 3 não responde desde 2020-04-25 13:07:58.025503!
+2020-04-25 13:18:06.846176 - INFO - E-mail enviado!
+2020-04-25 13:23:59.283488 - INFO - Subscrevendo no tópico /4jggokgpepnvsb2uv4s40d59ov/relogio01/attrs...
+2020-04-25 13:23:59.284230 - INFO - Subscrevendo nos tópicos /4jggokgpepnvsb2uv4s40d59ov/raspberry_controle/attrs e /4jggokgpepnvsb2uv4s40d59ov/raspberry/attrs...
+2020-04-25 13:29:09.845078 - INFO - Monitoramento iniciado.
+2020-04-25 13:55:01.071452 - INFO - Monitoramento encerrado.
+2020-04-25 13:59:09.850113 - INFO - Monitoramento iniciado.
+2020-04-25 14:25:16.190442 - INFO - Monitoramento encerrado.
+2020-04-25 14:29:09.845473 - INFO - Monitoramento iniciado.
+2020-04-25 14:30:09.908131 - INFO - Ausência detectada! Temporizador iniciado.
+2020-04-25 14:35:39.223603 - INFO - Presença detectada!
+2020-04-25 14:55:15.190445 - INFO - Monitoramento encerrado.
+2020-04-25 14:59:09.816830 - INFO - Monitoramento iniciado.
+2020-04-25 15:00:09.870391 - INFO - Ausência detectada! Temporizador iniciado.
+2020-04-25 15:10:10.438310 - INFO - Sala disponível!
+2020-04-25 15:10:12.442612 - ERROR - E-mail não enviado! (535, b5.7.8 Username and Password not accepted. Learn more atn5.7.8 https://support.google.com/mail/?p=BadCredentials d23sm5917793qkj.26 - gsmtp)
+2020-04-25 15:10:14.446412 - INFO - Monitoramento encerrado.
+2020-04-25 15:15:40.722842 - INFO - Subscrevendo no tópico /4jggokgpepnvsb2uv4s40d59ov/relogio01/attrs...
+2020-04-25 15:15:40.722867 - INFO - Subscrevendo nos tópicos /4jggokgpepnvsb2uv4s40d59ov/raspberry_controle/attrs e /4jggokgpepnvsb2uv4s40d59ov/raspberry/attrs...
+2020-04-25 15:19:31.941121 - INFO - Monitoramento iniciado.
+2020-04-25 15:20:31.998306 - INFO - Ausência detectada! Temporizador iniciado.
+2020-04-25 15:30:32.566316 - INFO - Sala disponível!
+2020-04-25 15:30:34.678479 - ERROR - E-mail não enviado! (535, b5.7.8 Username and Password not accepted. Learn more atn5.7.8 https://support.google.com/mail/?p=BadCredentials u24sm5932510qkk.84 - gsmtp)
+2020-04-25 15:30:36.682418 - INFO - Monitoramento encerrado.
+2020-04-25 15:39:30.528031 - INFO - Monitoramento iniciado.
+2020-04-25 15:40:30.586310 - INFO - Ausência detectada! Temporizador iniciado.
+2020-04-25 15:50:31.167776 - INFO - Sala disponível!
+2020-04-25 15:50:35.692971 - INFO - E-mail enviado!
+2020-04-25 15:50:37.697777 - INFO - Monitoramento encerrado.
+2020-04-25 16:01:15.074147 - INFO - Subscrevendo nos tópicos /4jggokgpepnvsb2uv4s40d59ov/raspberry_controle/attrs e /4jggokgpepnvsb2uv4s40d59ov/raspberry/attrs...
+2020-04-25 16:01:15.074969 - INFO - Subscrevendo no tópico /4jggokgpepnvsb2uv4s40d59ov/relogio01/attrs...
+2020-04-25 16:09:18.547880 - INFO - Monitoramento iniciado.
+2020-04-25 16:35:05.056435 - INFO - Monitoramento encerrado.
+2020-04-25 16:39:18.542565 - INFO - Monitoramento iniciado.
+2020-04-25 17:15:25.392451 - INFO - Monitoramento encerrado.
+2020-04-25 17:19:18.542141 - INFO - Monitoramento iniciado.
+2020-04-25 17:20:18.604741 - INFO - Ausência detectada! Temporizador iniciado.
+2020-04-25 17:25:17.892186 - INFO - Presença detectada!
+2020-04-25 17:55:19.336597 - INFO - Monitoramento encerrado.
+2020-04-25 17:59:18.540325 - INFO - Monitoramento iniciado.
+2020-04-25 18:00:18.600136 - INFO - Ausência detectada! Temporizador iniciado.
+2020-04-25 18:10:19.177237 - INFO - Sala disponível!
+2020-04-25 18:10:23.889057 - INFO - E-mail enviado!
+2020-04-25 18:10:25.894098 - INFO - Monitoramento encerrado.
+2020-04-28 19:17:18.828809 - INFO - Subscrevendo nos tópicos /4jggokgpepnvsb2uv4s40d59ov/raspberry_controle/attrs e /4jggokgpepnvsb2uv4s40d59ov/raspberry/attrs...
+2020-04-28 19:17:18.830595 - INFO - Subscrevendo no tópico /4jggokgpepnvsb2uv4s40d59ov/relogio01/attrs...
+2020-04-28 19:18:10.655057 - INFO - Monitoramento iniciado.
+2020-04-28 19:18:10.656579 - INFO - Monitoramento encerrado.
+--------------------------------------------------------------------
+2020-04-28 19:38:09.122028 - INFO - 
+2020-04-28 19:38:09.122511 - INFO - Subscrevendo no tópico /4jggokgpepnvsb2uv4s40d59ov/relogio01/attrs...
+2020-04-28 19:39:01.798027 - INFO - Monitoramento iniciado.
+2020-04-28 19:40:01.833562 - INFO - Ausência detectada! Temporizador iniciado.
+2020-04-28 19:42:52.282681 - INFO - Subscrevendo no tópico /4jggokgpepnvsb2uv4s40d59ov/relogio01/attrs...
+2020-04-28 19:42:52.282707 - INFO - 
+2020-04-28 19:43:21.422577 - INFO - Monitoramento iniciado.
+2020-04-28 19:46:32.526030 - INFO - 
+2020-04-28 19:46:40.491757 - INFO - Monitoramento iniciado.
+2020-04-28 19:47:40.544592 - INFO - Ausência detectada! Temporizador iniciado.
+2020-04-28 19:48:46.739755 - INFO - 
+2020-04-28 19:48:54.003498 - INFO - Monitoramento iniciado.
+2020-04-28 19:49:54.055088 - INFO - Ausência detectada! Temporizador iniciado.
+2020-04-28 19:51:30.217443 - INFO - 
+2020-04-28 19:51:38.718995 - INFO - Monitoramento iniciado.
+2020-04-28 19:52:38.770968 - INFO - Ausência detectada! Temporizador iniciado.
+2020-04-28 19:57:16.799111 - INFO - 
+2020-04-28 19:57:19.927682 - INFO - Monitoramento iniciado.
+2020-04-28 19:58:19.978920 - INFO - Ausência detectada! Temporizador iniciado.
+2020-04-28 20:01:37.382291 - INFO - 
+2020-04-28 20:01:41.573134 - INFO - Monitoramento iniciado.
+2020-04-28 20:02:41.626854 - INFO - Ausência detectada! Temporizador iniciado.
+2020-04-28 20:02:41.629051 - INFO - Escritório vazio há 5 minutos.
+2020-04-28 21:44:54.715544 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-28 21:45:24.747436 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-04-28 21:46:06.530211 - INFO - 
+2020-04-28 21:46:15.330877 - INFO - Monitoramento iniciado.
+2020-04-28 21:46:45.357603 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-28 21:47:15.362039 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-04-28 21:52:15.668908 - INFO - Ambiente vazio há 5 minutos.
+2020-04-28 21:57:15.973686 - INFO - Ambiente disponível!
+2020-04-28 21:57:24.788961 - INFO - E-mail enviado!
+2020-04-28 21:57:26.793671 - INFO - Monitoramento encerrado.
+------------------------------------------------------------------------------------
+2020-04-28 21:59:05.909761 - INFO - Monitoramento iniciado.
+2020-04-28 21:59:35.935456 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-28 22:00:35.986512 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-28 22:01:36.039461 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-28 22:02:36.092504 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-28 22:07:08.858156 - INFO - 
+2020-04-28 22:07:27.709999 - INFO - Monitoramento iniciado.
+2020-04-28 22:07:57.735449 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-28 22:08:27.767463 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-04-28 22:08:56.798515 - INFO - Idenficada a presença de pessoas no ambiente!
+2020-04-28 22:11:35.076284 - INFO - 
+------------------------------------------------------------------------------------
+2020-04-28 22:16:41.919337 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-28 22:17:41.981589 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-28 22:18:42.045657 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-29 07:30:39.002988 - INFO - Aplicação em execução.
+------------------------------------------------------------------------------------
+2020-04-29 07:31:50.804105 - INFO - Aplicação em execução.
+-----------------------------------------------------------
+2020-04-29 07:46:46.464616 - INFO - Aplicação em execução.
+-----------------------------------------------------------
+2020-04-29 07:59:06.349479 - INFO - Monitoramento iniciado.
+2020-04-29 08:25:00.843620 - INFO - Monitoramento encerrado.
+-----------------------------------------------------------
+2020-04-29 08:29:06.345892 - INFO - Monitoramento iniciado.
+2020-04-29 08:29:35.383516 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-29 08:30:35.440380 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-29 08:31:35.493420 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-29 08:55:01.075186 - INFO - Monitoramento encerrado.
+-----------------------------------------------------------
+2020-04-29 08:59:06.345084 - INFO - Monitoramento iniciado.
+2020-04-29 08:59:35.379598 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-29 09:00:05.408482 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-04-29 09:05:05.717758 - INFO - Ambiente vazio há 5 minutos.
+2020-04-29 09:06:05.780559 - INFO - Idenficada a presença de pessoas no ambiente!
+2020-04-29 09:25:01.068582 - INFO - Monitoramento encerrado.
+-----------------------------------------------------------
+2020-04-29 09:29:06.294702 - INFO - Monitoramento iniciado.
+2020-04-29 09:29:35.332395 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-29 09:30:05.360907 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-04-29 09:35:05.660523 - INFO - Ambiente vazio há 5 minutos.
+2020-04-29 09:40:05.959042 - INFO - Ambiente vazio há 10 minutos.
+2020-04-29 09:45:06.258866 - INFO - Ambiente disponível!
+2020-04-29 09:45:08.267396 - INFO - Monitoramento encerrado.
+-----------------------------------------------------------
+2020-04-29 09:48:52.996299 - INFO - Aplicação em execução.
+-----------------------------------------------------------
+2020-04-29 09:49:59.692954 - INFO - Monitoramento iniciado.
+2020-04-29 09:50:28.724137 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-29 09:50:58.752897 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-04-29 09:51:58.815499 - INFO - Ambiente disponível!
+2020-04-29 09:52:03.805344 - INFO - E-mail enviado!
+2020-04-29 09:52:05.809205 - INFO - Monitoramento encerrado.
+-----------------------------------------------------------
+2020-04-29 09:56:25.941413 - INFO - Aplicação em execução.
+-----------------------------------------------------------
+2020-04-29 09:58:22.408010 - INFO - Aplicação em execução.
+-----------------------------------------------------------
+2020-04-29 09:59:25.345834 - INFO - Monitoramento iniciado.
+2020-04-29 09:59:54.378590 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-29 10:00:24.408650 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-04-29 10:00:54.440295 - INFO - Identificada a presença de pessoas no ambiente!
+2020-04-29 10:01:44.457645 - INFO - Aplicação em execução.
+-----------------------------------------------------------
+2020-04-29 10:09:25.554256 - INFO - Monitoramento iniciado.
+2020-04-29 10:25:00.463005 - INFO - Monitoramento encerrado.
+-----------------------------------------------------------
+2020-04-29 10:29:25.522768 - INFO - Monitoramento iniciado.
+2020-04-29 10:29:54.555260 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-29 10:30:54.614454 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-29 10:31:54.671482 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-29 10:55:00.255247 - INFO - Monitoramento encerrado.
+-----------------------------------------------------------
+2020-04-29 10:59:25.556840 - INFO - Monitoramento iniciado.
+2020-04-29 10:59:54.599494 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-29 11:00:24.628857 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-04-29 11:05:24.923150 - INFO - Ambiente vazio há 5 minutos.
+2020-04-29 11:05:54.956488 - INFO - Identificada a presença de pessoas no ambiente!
+2020-04-29 11:25:00.282321 - INFO - Monitoramento encerrado.
+-----------------------------------------------------------
+2020-04-29 11:29:25.555897 - INFO - Monitoramento iniciado.
+2020-04-29 11:29:54.589720 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-29 11:30:24.620406 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-04-29 11:35:24.916617 - INFO - Ambiente vazio há 5 minutos.
+2020-04-29 11:40:25.212915 - INFO - Ambiente vazio há 10 minutos.
+2020-04-29 11:45:25.515037 - INFO - Ambiente disponível!
+2020-04-29 11:45:27.522684 - INFO - Monitoramento encerrado.
+-----------------------------------------------------------
+2020-04-29 11:59:37.715285 - INFO - Monitoramento iniciado.
+2020-04-29 12:00:06.752409 - INFO - Identificada a ausência de pessoas em regiões do ambiente.
+2020-04-29 12:00:36.780467 - INFO - Nenhuma pessoa identificada no ambiente. Temporizador iniciado.
+2020-04-29 12:05:37.068758 - INFO - Ambiente vazio há 5 minutos.
+2020-04-29 12:10:37.372100 - INFO - Ambiente vazio há 10 minutos.
+2020-04-29 12:15:37.664600 - INFO - Ambiente disponível!
+2020-04-29 12:15:43.520300 - INFO - E-mail enviado!
+2020-04-29 12:15:45.524908 - INFO - Monitoramento encerrado.
+-----------------------------------------------------------
+2020-05-27 09:55:06.270890 - INFO - Subscrevendo no tópico relogio01...
+2020-05-27 09:56:15.226449 - INFO - Subscrevendo no tópico relogio01...

@@ -1,0 +1,34 @@
+
+room: #Escritorio a ser monitorado
+    id: 44 #ID da sala no sistema de agendamentos da RNP
+    nodes: 3 #quantidade de nós da sala
+
+email: #Configurações de email
+      #Dados do remetente
+      email_sender: 'escritoriointeligenternp@gmail.com'
+      password_sender: 'R@spb3rry123.'
+      #Dados do destinatario
+      email_receiver: 'franciellysouza552@gmail.com'
+      #Dados do email
+      availability: #email informando de que a sala está disponível
+            subject: 'Sala Disponívell'
+            message: 'O escritório está disponívell'
+      failure: #email informando que o nó x parou de funcionar
+            subject: 'Falha de sensor'
+            message: 'Falha'
+
+topics:
+      topic_scheduler: 'relogio' #topico da aplicação relogio
+      topic_raspberry: 'raspberry' #topico para detecção de ausencia
+      
+mqtt_broker: #IP e porta do mosquitto
+      host: 'localhost'
+      port: 1883
+
+set_times:
+      query_database: 20 #intervalo de tempo para consultas ao banco de dados do sistema de agendamento (em minutos)
+      cancel_booking: 15  #intervalo de tempo para cancelamento da reserva da sala após nenhum usuário entrar neste ambiente (em minutos)
+
+scheduling_api: #credenciais para acesso a api de agendamento da RNP
+      user: 'escritoriointeligenternp@gmail.com'
+      password: 'c167f6e5'
