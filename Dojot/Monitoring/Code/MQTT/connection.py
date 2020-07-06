@@ -16,7 +16,7 @@ class Connection(object):
     def __init__(self):
         self.__config = yaml.load(open('../Scripts/config.yaml', 'r'))
 
-        self.__client = mqtt.Client("admin")
+        self.__client = mqtt.Client()
         self.__client.connect(host=self.__config['mqtt_broker']['host'], port=self.__config['mqtt_broker']['port'])
         self.__client.loop_start()
         self.__office = Office(self.__config)
@@ -45,9 +45,9 @@ class Connection(object):
             end = datetime.strptime(json.loads(message.payload)['fim'], '%Y-%m-%d %H:%M:%S.%f')
             self.__office.set_stop(end)
             self.__office.set_allNodes()
-            _thread.start_new_thread(self.monitoring(), )
-        except:
-            pass
+            _thread.start_new_thread(self.monitoring(), ())
+        except Exception as e:
+            print(e)
     
     def subscribe_schedule(self): 
         logs.log("INFO - Subscrevendo no tópico {}...".format(self.__config['topics']['subscribe']['topic_scheduler']))

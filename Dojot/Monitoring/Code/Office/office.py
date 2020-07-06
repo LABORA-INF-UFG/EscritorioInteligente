@@ -58,7 +58,7 @@ class Office(object):
     def set_allNodes(self): # altera o status de todos os nós para falso (detectando presença)
         for x in range(len(self.__nodes)):
             self.__nodes[x]['Status'] = False
-            self.__nodes[index]['Last_Update'] = datetime.now()
+            self.__nodes[x]['Last_Update'] = datetime.now()
         #print(self.__nodes)
 
     def set_start(self, start):
