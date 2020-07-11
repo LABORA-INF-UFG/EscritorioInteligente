@@ -45,7 +45,7 @@ class Connection(object):
             end = datetime.strptime(json.loads(message.payload)['fim'], '%Y-%m-%d %H:%M:%S.%f')
             self.__office.set_stop(end)
             self.__office.set_allNodes()
-            _thread.start_new_thread(self.monitoring(), ())
+            _thread.start_new_thread(self.monitoring, ())
         except Exception as e:
             print(e)
     
