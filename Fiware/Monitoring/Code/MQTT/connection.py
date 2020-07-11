@@ -51,7 +51,7 @@ class Connection(object):
             end = datetime.strptime(decoded_message[33:59], '%Y-%m-%d %H:%M:%S.%f')
             self.__office.set_stop(end)
             self.__office.set_allNodes()
-            _thread.start_new_thread(self.monitoring(), ()) #inicia monitoramento
+            _thread.start_new_thread(self.monitoring, ()) #inicia monitoramento
         except:
             pass
     
