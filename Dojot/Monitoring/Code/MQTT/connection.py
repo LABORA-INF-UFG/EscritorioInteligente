@@ -45,12 +45,11 @@ class Connection(object):
             end = datetime.strptime(json.loads(message.payload)['fim'], '%Y-%m-%d %H:%M:%S.%f')
             self.__office.set_stop(end)
             self.__office.set_allNodes()
-            _thread.start_new_thread(self.monitoring(), ())
+            _thread.start_new_thread(self.monitoring, ())
         except Exception as e:
             print(e)
     
     def subscribe_schedule(self): 
-        logs.log("INFO - Subscrevendo no tópico {}...".format(self.__config['topics']['subscribe']['topic_scheduler']))
         try:
 
             subscribe.callback(self.on_message_schedule, self.__config['topics']['subscribe']['topic_scheduler'])
@@ -62,22 +61,19 @@ class Connection(object):
             response = self.__office.check_availability() #inicia monitoramento da sala 
             if response == 1:
                 msg = {"termino_monitoramento": True}
-                logs.log('INFO - Publicando: {}'.format(json.dumps(msg)))
                 response = self.__client.publish(self.__config['topics']['publish']['topic_scheduler'], json.dumps(msg)) #encerra monitoramento nos sensores
                 time.sleep(2)
                 response.wait_for_publish()
-            #logs_scheduler.log('Message is published = {}'.format(response.is_published()))
                 if not response.is_published():
                     print(response)
         except:
             pass
         finally:
-            logs.log("INFO - Monitoramento encerrado.")    
+            logs.log("INFO - Monitoramento encerrado.\n-----------------------------------------------------------")
 
     def callback(self, client, userdata, message):
         topic = message.topic
         payload = json.loads(message.payload)
-        print(payload)
         time_msg = payload['time']
         if topic == self.__config['topics']['subscribe']['topic_heartbeat']:
             raspberry_id = payload['id']
@@ -91,10 +87,9 @@ class Connection(object):
             for node in self.__office.get_nodes():
                 if(int(node['ID'])==int(raspberry_id)):
                     self.__office.set_node(True, self.__office.get_nodes().index(node), time_msg)
-        #print(self.__office.get_nodes())
 
     def subscribe_raspberry(self):
-        logs.log("INFO - Subscrevendo nos tópicos {} e {}...".format(self.__config['topics']['subscribe']['topic_heartbeat'], self.__config['topics']['subscribe']['topic_raspberry']))
+        logs.log("INFO - Aplicação em execução.\n-----------------------------------------------------------")
         try:
             subscribe.callback(self.callback, [self.__config['topics']['subscribe']['topic_heartbeat'], self.__config['topics']['subscribe']['topic_raspberry']])
         except:

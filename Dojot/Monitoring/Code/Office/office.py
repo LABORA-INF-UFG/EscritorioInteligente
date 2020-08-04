@@ -37,7 +37,6 @@ class Office(object):
         for node in self.__nodes:
             if not node['Status']:
                 return 0
-        #print(self.__nodes)
         return 1
 
     def get_oneNode(self): # retorna 1 se ao menos um nó está detectando ausencia de pessoas
@@ -48,7 +47,6 @@ class Office(object):
         return 0
 
     def set_node(self, status, index, time_msg): # atualiza o dado de leitura do nó (ausencia/presenca e o horario de envio da mensagem)
-        #print(index, time_msg)
         self.__nodes[index]['Status'] = status
         self.__nodes[index]['Last_Update'] = datetime.strptime(time_msg, '%Y-%m-%d %H:%M:%S.%f')
 
@@ -58,7 +56,6 @@ class Office(object):
     def set_allNodes(self): # altera o status de todos os nós para falso (detectando presença)
         for x in range(len(self.__nodes)):
             self.__nodes[x]['Status'] = False
-        #print(self.__nodes)
 
     def set_start(self, start):
         self.__start = start

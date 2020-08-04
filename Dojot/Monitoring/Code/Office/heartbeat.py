@@ -30,7 +30,6 @@ class Heartbeat(object):
     def scheduler(self, office):
         scheduler = AsyncIOScheduler()
         scheduler.add_job(self.heartbeat, 'interval', minutes=5, id='heartbeat', args=[office])
-        #print(scheduler.get_jobs())
         scheduler.start()
         
         print('Press Ctrl+{0} to exit'.format('Break' if os.name == 'nt' else 'C'))

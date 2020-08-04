@@ -1,24 +1,11 @@
 
 room: #Escritorio a ser monitorado
     id: 44 #ID da sala no sistema de agendamentos da RNP
-    nodes: 3 #quantidade de nós da sala
+    nodes: 2 #quantidade de nós da sala
 
 node: #informações do nó
     node_id: 1
-
-email: #Configurações de email
-      #Dados do remetente
-      email_sender: 'escritoriointeligente123@gmail.com'
-      password_sender: 'fran123.'
-      #Dados do destinatario
-      email_receiver: 'franciellysouza552@gmail.com'
-      #Dados do email
-      availability: #email informando de que a sala está disponível
-            subject: 'Sala'
-            message: 'T'
-      failure: #email informando que o nó x parou de funcionar
-            subject: 'teste'
-            message: 'falha'
+    distance_max: 10 #distancia em centímetros entre o sensor e o primeiro obstáculo fixo
 
 topics:
       subscribe:
@@ -33,11 +20,3 @@ topics:
 mqtt_broker: #IP e porta do mosquitto
       host: 'localhost'
       port: 1883
-
-set_times:
-      query_database: 20 #intervalo de tempo para consultas ao banco de dados do sistema de agendamento (em minutos)
-      cancel_booking: 15  #intervalo de tempo para cancelamento da reserva da sala após nenhum usuário entrar neste ambiente (em minutos)
-
-scheduling_api: #credenciais para acesso a api de agendamento da RNP
-      user: 'escritoriointeligenternp@gmail.com'
-      password: 'c167f6e5'

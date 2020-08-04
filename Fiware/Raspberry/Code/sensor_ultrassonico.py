@@ -15,6 +15,8 @@ class Ultrassonico(object):
     def __init__(self):
         self.__config = yaml.load(open('../Scripts/config.yaml', 'r'))
         self.__id = self.__config['node']['node_id']
+        self.__distance_max = self.__config['node']['distance_max']
+
         self.__client_id = "admin{}".format(self.__id)
         self.__end = False
         self.__client = mqtt.Client()
@@ -49,16 +51,41 @@ class Ultrassonico(object):
             self.log('ERROR - Unable to kill the thread!')
     
     def distance(self):
-        return 90
+        time.sleep(1)
+        # set Trigger to HIGH
+        GPIO.output(GPIO_TRIGGER, True)
+ 
+        # set Trigger after 0.01ms to LOW
+        time.sleep(0.00001)
+        GPIO.output(GPIO_TRIGGER, False)
+ 
+        StartTime = time.time()
+        StopTime = time.time()
+ 
+        # save StartTime
+        while GPIO.input(GPIO_ECHO) == 0:
+            StartTime = time.time()
+ 
+        # save time of arrival
+        while GPIO.input(GPIO_ECHO) == 1:
+            StopTime = time.time()
+ 
+        # time difference between start and arrival
+        TimeElapsed = StopTime - StartTime
+        # multiply with the sonic speed (34300 cm/s)
+        # and divide by 2, because there and back
+        distance = (TimeElapsed * 34300) / 2
+ 
+        return distance
  
     def monitoring(self, time_stop):
         #print(not self.__end)
         self.log('INFO - Monitoramento Iniciado.')
         while datetime.now() <= time_stop - timedelta(minutes=5) and not self.__end: # enquanto ainda nao falta 15 min pra finalizar a reserva e o monitoramento ainda nao foi encerrado
             dist = self.distance()
-            if dist > 10: # verifica se a distancia é maior que 10 (sem presença) e se o monitoramento nao foi encerrado
+            if dist > self.__distance_max: # verifica se a distancia é maior que 10 (sem presença) e se o monitoramento nao foi encerrado
                 start = datetime.now() #inicia o temporizador de 30 seg
-                while self.distance() > 10 and not self.__end and datetime.now() <= time_stop - timedelta(minutes=5): # verifica se a distancia é maior que 10 (sem presença)
+                while self.distance() > self.__distance_max and not self.__end and datetime.now() <= time_stop - timedelta(minutes=5): # verifica se a distancia é maior que 10 (sem presença)
                     if datetime.now() >= start + timedelta(seconds=29) and not self.__end: # verifica se já se passaram 30 seg sem presença  e se o monitoramento nao foi encerrado
                         msg = 'i|{}|t|{}'.format(self.__id, str(datetime.now()))
                         self.log('INFO - Ausencia detectada!')
@@ -99,7 +126,7 @@ class Ultrassonico(object):
 
     def scheduler(self):
         scheduler = AsyncIOScheduler()
-        scheduler.add_job(self.heartbeat, 'interval', minutes=5, id='heartbeat')
+        scheduler.add_job(self.heartbeat, 'interval', minutes=5, id='heartbeat', max_instances= 10)
         scheduler.start()
         
         print('Press Ctrl+{0} to exit'.format('Break' if os.name == 'nt' else 'C'))

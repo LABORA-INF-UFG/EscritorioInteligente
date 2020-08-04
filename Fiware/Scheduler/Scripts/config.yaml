@@ -3,20 +3,6 @@ room: #Escritorio a ser monitorado
     id: 44 #ID da sala no sistema de agendamentos da RNP
     nodes: 2 #quantidade de nós da sala
 
-email: #Configurações de email
-      #Dados do remetente
-      email_sender: 'escritoriointeligenternp@gmail.com'
-      password_sender: 'R@apb3rry123.'
-      #Dados do destinatario
-      email_receiver: 'franciellysouza552@gmail.com'
-      #Dados do email
-      availability: #email informando de que a sala está disponível
-            subject: 'Sala Disponível'
-            message: 'O escritório está disponível'
-      failure: #email informando que o nó x parou de funcionar
-            subject: 'Falha de sensor'
-            message: 'Falha'
-
 topics:
       topic_scheduler: '/4jggokgpepnvsb2uv4s40d59ov/relogio01/attrs' #topico da aplicação relogio
       topic_raspberry: '/4jggokgpepnvsb2uv4s40d59ov/raspberry/attrs' #topico para detecção de ausencia

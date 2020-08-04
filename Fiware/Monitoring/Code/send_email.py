@@ -12,8 +12,6 @@ except ImportError:
 if __name__ == "__main__":
     connection = Connection()
     heartbeat = Heartbeat()
-    #config = yaml.load(open('./Scripts/config.yaml', 'r'))
-    #pool = ThreadPool(processes=1000)
     _thread.start_new_thread(connection.subscribe_schedule, ())
     _thread.start_new_thread(connection.subscribe_raspberry, ())
     heartbeat.scheduler(connection.get_office())

@@ -1,6 +1,6 @@
 from datetime import datetime, date, timedelta
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from scheduling_simulator import SchedulingSimulator
+#from scheduling_simulator import SchedulingSimulator
 import logs
 import time, yaml, os, requests, logging, json
 import paho.mqtt.client as mqtt
@@ -25,7 +25,7 @@ class Scheduler(object):
         self.consumer()
         self.scheduler()
     
-    def get_scheduling(self): #busca reservas no banco
+    '''def get_scheduling(self): #busca reservas no banco
         self.__list.clear()
         logs.log("INFO - Buscando reservas...")
         #print(self.__list)
@@ -35,9 +35,9 @@ class Scheduler(object):
         for row in results:
             r = {"start": row['i'], "end": row['f']}
             self.__list.append(r)
-        #print(self.__list)
+        #print(self.__list)'''
 
-    '''def get_scheduling(self): #busca reservas no banco
+    def get_scheduling(self): #busca reservas no banco
         today = datetime.now().date().strftime("%d/%m/%Y")
         tomorrow = (datetime.now() + timedelta(days=1)).date().strftime("%d/%m/%Y")
         self.__list.clear()
@@ -49,7 +49,6 @@ class Scheduler(object):
             end = datetime.strptime(row['dataFinal'], '%d/%m/%Y %H:%M')
             r = {'start': start, 'end': end}
             self.__list.append(r) #adiciona a reserva na lista
-        print(self.__list)'''
 
     
     def consumer(self): #publica horarios de reserva
