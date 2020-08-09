@@ -5,7 +5,6 @@ from Office import logs
 
 class Email(object):
     def __init__(self):
-        try:
         self.__config = yaml.load(open('../Scripts/config.yaml', 'r'))
         self.__msg = None
         self.__smtp_ssl_host = 'smtp.gmail.com'
