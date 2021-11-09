@@ -11,6 +11,16 @@ try:
 except ImportError:
     import trollius as asyncio
 
+GPIO.setmode(GPIO.BCM)
+ 
+#set GPIO Pins
+GPIO_TRIGGER = 23
+GPIO_ECHO = 24
+ 
+#set GPIO direction (IN / OUT)
+GPIO.setup(GPIO_TRIGGER, GPIO.OUT)
+GPIO.setup(GPIO_ECHO, GPIO.IN)
+
 class Ultrassonico(object):
     def __init__(self):
         self.__config = yaml.load(open('../Scripts/config.yaml', 'r'))
@@ -28,15 +38,7 @@ class Ultrassonico(object):
         self.log("INFO - Subscribing to topic {}...".format(self.__config['topics']['topic_scheduler']))
         _thread.start_new_thread(self.subscribe_schedule, ())
         #GPIO Mode (BOARD / BCM)
-        '''GPIO.setmode(GPIO.BCM)
- 
-        #set GPIO Pins
-        GPIO_TRIGGER = 23
-        GPIO_ECHO = 24
- 
-        #set GPIO direction (IN / OUT)
-        GPIO.setup(GPIO_TRIGGER, GPIO.OUT)
-        GPIO.setup(GPIO_ECHO, GPIO.IN)'''
+
         self.heartbeat()
         self.scheduler()
 

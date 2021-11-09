@@ -25,3 +25,7 @@ topics:
 mqtt_broker: #IP e porta do mosquitto
       host: 'localhost'
       port: 1883
+
+set_times:
+      query_database: 20 #intervalo de tempo para consultas ao banco de dados do sistema de agendamento (em minutos)
+      cancel_booking: 15  #intervalo de tempo para cancelamento da reserva da sala após nenhum usuário entrar neste ambiente (em minutos)

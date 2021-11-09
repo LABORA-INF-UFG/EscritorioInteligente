@@ -13,8 +13,8 @@ except ImportError:
 
 class Connection(object):
 
-    def __init__(self):
-        self.__config = yaml.load(open('../Scripts/config.yaml', 'r'))
+    def __init__(self, config):
+        self.__config = config
 
         self.__client = mqtt.Client()
         self.__client.connect(host=self.__config['mqtt_broker']['host'], port=self.__config['mqtt_broker']['port'])
@@ -42,8 +42,10 @@ class Connection(object):
 
     def on_message_schedule(self, client, userdata, message): #recebe horario de reserva e inicia monitoramento
         try:
+            
             end = datetime.strptime(json.loads(message.payload)['fim'], '%Y-%m-%d %H:%M:%S.%f')
             self.__office.set_stop(end)
+            self.__office.add_booking(json.loads(message.payload))
             self.__office.set_allNodes()
             _thread.start_new_thread(self.monitoring, ())
         except Exception as e:

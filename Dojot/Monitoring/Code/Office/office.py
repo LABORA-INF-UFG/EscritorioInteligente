@@ -12,12 +12,14 @@ except ImportError:
 class Office(object):
     def __init__(self, config):
         self.__msg = None
-        self.__id = None
+        self.__id = config['room']['id']
+        self.__id_booking = None
         self.__config = config
         self.__tenant = None
         self.__start = None
         self.__stop = None
         self.__nodes = []
+        #list of nodes
         for x in range(1, config['room']['nodes']+1):
             node = {'ID': x, 'Status': False, 'Last_Update': datetime.now(), 'Heartbeat': datetime.now()}
             self.__nodes.append(node)
@@ -70,6 +72,7 @@ class Office(object):
                 
                 return 0
         return 1
+
 
     def check_availability(self): #verifica se a sala está disponível
         logs.log("INFO - Monitoramento iniciado.")

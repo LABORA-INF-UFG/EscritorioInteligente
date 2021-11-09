@@ -1,0 +1,21 @@
+
+room: #Escritorio a ser monitorado
+    id: 44 #ID da sala no sistema de agendamentos da RNP
+    nodes: 2 #quantidade de nós da sala
+
+topics:
+      topic_scheduler: '/b2cdbbe033db11eb853de20166b6007e/relogio/attrs' #topico da aplicação relogio
+      topic_raspberry: '/b2cdbbe033db11eb853de20166b6007e/raspberry/attrs' #topico para detecção de ausencia
+      topic_heartbeat: '/b2cdbbe033db11eb853de20166b6007e/rasp_con/attrs' #topico do mecanismo de tolerancia a falhas
+      
+mqtt_broker: #IP e porta do mosquitto
+      host: '200.143.200.6'
+      port: 8002
+
+set_times:
+      query_database: 20 #intervalo de tempo para consultas ao banco de dados do sistema de agendamento (em minutos)
+      cancel_booking: 15  #intervalo de tempo para cancelamento da reserva da sala após nenhum usuário entrar neste ambiente (em minutos)
+
+scheduling_api: #credenciais para acesso a api de agendamento da RNP
+      user: 'escritoriointeligenternp@gmail.com'
+      password: 'c167f6e5'

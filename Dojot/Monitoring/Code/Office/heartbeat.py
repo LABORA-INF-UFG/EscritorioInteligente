@@ -3,7 +3,7 @@ import os, yaml
 from Email.email import Email
 from datetime import datetime, date, timedelta
 from Office import logs
-
+from pymongo import MongoClient
 
 try:
     import asyncio
@@ -11,9 +11,10 @@ except ImportError:
     import trollius as asyncio
 class Heartbeat(object):
 
-    def __init__(self):
-        self.__config = yaml.load(open('../Scripts/config.yaml', 'r'))
-
+    def __init__(self, config):
+        self.__config = config
+        self.__id_office = self.__config['room']['id']
+ 
     def heartbeat(self, office):
         now = datetime.now()
         for node in office.get_nodes():
@@ -25,6 +26,8 @@ class Heartbeat(object):
                 msg = msg_config + '\nNó com ID = {} não responde desde {}!'.format(node['ID'], node['Heartbeat'])
                 email = Email()
                 email.send_email(subject, msg)
+
+                self.update_status_node(node['ID'], 'Inativo')
 
 
     def scheduler(self, office):
